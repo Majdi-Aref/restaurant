@@ -1,7 +1,7 @@
 ---
 name: restaurant user stories template
 about: This is the default restaurant user stories template
-title: ''
+title: 'User story: '
 labels: ''
 assignees: ''
 
