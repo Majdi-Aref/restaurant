@@ -6,6 +6,7 @@ from django_summernote.admin import SummernoteModelAdmin
 @admin.register(MenuItem)
 class MenuItemAdmin(SummernoteModelAdmin):
 
+    list_display = ('name', 'price')
     summernote_fields = ('description',)
 
 
