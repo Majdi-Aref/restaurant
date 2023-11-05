@@ -1,1 +1,54 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="container mt-5">
+  <!-- Hero Section -->
+  <div class="row">
+    <div class="col-lg-12">
+      <div
+        class="hero-image"
+        style="
+          background-image: url('{% static 'images/hero-image-1.jpg' %}');
+          height: 400px;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <h1 class="text-center text-white py-5">Welcome to Savour!</h1>
+      </div>
+    </div>
+  </div>
 
+  <!-- About Us Section -->
+  <div class="row mt-5">
+    <div class="col-lg-12">
+      <h2 class="text-center">About Us</h2>
+      <p class="mt-4">
+        Welcome to Savour! A cozy restaurant where tasty dreams come true. We
+        are a small, family-owned business located in Hamburg, Germany, offering
+        a unique dining experience that combines the mellowness of home with
+        sophisticated eating.
+      </p>
+      <p>
+        Our menu is a delightful blend of traditional and contemporary dishes,
+        crafted with passion by our talented chefs. We source our ingredients
+        locally, ensuring the freshest and highest quality goes into every dish
+        we serve.
+      </p>
+      <p>
+        But what sets us apart is our innovative online booking system. We
+        understand that in today's fast-paced world, convenience is key. That's
+        why we've made it easy for you to secure a table at our restaurant from
+        the comfort of your own home. Simply register and sign in on our
+        website, choose your preferred date and time, and your table will be
+        immediately booked.
+      </p>
+      <p>
+        We believe that dining should be more than just a meal - it should be an
+        experience. From the moment you step through our doors to the moment you
+        leave, we strive to make every second count. So come, join us, and let
+        us take you on a culinary journey you won't forget.
+      </p>
+      <p class="mb-4">We look forward to serving you soon!</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'base.html')
+    return render(request, 'home.html')
 
 
 def menu(request):
