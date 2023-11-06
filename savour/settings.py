@@ -61,6 +61,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# CSRF settings
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-majdi-aref-restaurant-qtl2lgzjr6.us2.codeanyapp.com']
+
 ROOT_URLCONF = 'savour.urls'
 
 TEMPLATES = [

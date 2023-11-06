@@ -9,3 +9,7 @@ def home(request):
 def menu(request):
     menu_items = MenuItem.objects.all()
     return render(request, 'menu.html', {'menu_items': menu_items})
+
+
+def register(request):
+    return render(request, 'register.html')
