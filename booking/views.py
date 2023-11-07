@@ -17,3 +17,7 @@ def register(request):
 
 def signin(request):
     return render(request, 'signin.html')
+
+
+def book(request):
+    return render(request, 'book.html')
