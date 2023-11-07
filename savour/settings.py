@@ -101,6 +101,18 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+
+# Authentication
+
+LOGIN_URL = 'signin'
+LOGOUT_URL = 'signout'
+LOGIN_REDIRECT_URL = 'book'
+LOGOUT_REDIRECT_URL = 'home'
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
