@@ -13,3 +13,7 @@ def menu(request):
 
 def register(request):
     return render(request, 'register.html')
+
+
+def signin(request):
+    return render(request, 'signin.html')
