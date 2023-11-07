@@ -1,5 +1,8 @@
+from django.contrib.auth import login
+from django.contrib.auth.forms import UserCreationForm
+from django.shortcuts import render, redirect
 from .models import MenuItem
-from django.shortcuts import render
+from .forms import NewUserForm
 
 
 def home(request):
@@ -12,7 +15,14 @@ def menu(request):
 
 
 def register(request):
-    return render(request, 'register.html')
+    if request.method == 'POST':
+        form = NewUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('signin')
+    else:
+        form = NewUserForm()
+    return render(request, 'register.html', {'form': form})
 
 
 def signin(request):
