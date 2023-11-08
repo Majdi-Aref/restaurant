@@ -6,27 +6,40 @@
       <form method="POST">
         {% csrf_token %}
         <div class="mb-3">
-          <label for="username" class="form-label">Username</label>
+          <label for="id_username" class="form-label">Username</label>
           <input
             type="text"
             class="form-control"
-            id="username"
+            id="id_username"
             name="username"
             required
           />
+          {% if form.username.errors %}
+          <div class="alert alert-danger mt-2">
+            {{ form.username.errors.as_text }}
+          </div>
+          {% endif %}
         </div>
         <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
+          <label for="id_password" class="form-label">Password</label>
           <input
             type="password"
             class="form-control"
-            id="password"
+            id="id_password"
             name="password"
             required
           />
+          {% if form.password.errors %}
+          <div class="alert alert-danger mt-2">
+            {{ form.password.errors.as_text }}
+          </div>
+          {% endif %}
         </div>
         <button type="submit" class="btn btn-primary">Sign In</button>
       </form>
+      {% if form.non_field_errors %}
+      <div class="alert alert-danger mt-2">{{ form.non_field_errors }}</div>
+      {% endif %}
     </div>
   </div>
 </div>

@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from .models import MenuItem
 from .forms import NewUserForm
+from django.contrib.auth.views import LoginView
 
 
 def home(request):
@@ -24,8 +25,9 @@ def register(request):
     return render(request, 'register.html', {'form': form})
 
 
-def signin(request):
-    return render(request, 'signin.html')
+class SignInView(LoginView):
+    template_name = 'signin.html'
+    success_url = 'book'
 
 
 def book(request):
