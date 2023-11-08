@@ -38,11 +38,14 @@ class SignOutView(LogoutView):
 
 @login_required
 def book(request):
-    form = BookingForm()
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
-            form.save()
+            booking = form.save(commit=False)
+            booking.user = request.user
+            booking.save()
             return redirect('home')
+    else:
+        form = BookingForm()
     tables = Table.objects.all()
     return render(request, 'book.html', {'form': form, 'tables': tables})
