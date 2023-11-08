@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 from .models import MenuItem
 from .forms import NewUserForm
 from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LogoutView
 
 
 def home(request):
@@ -28,6 +29,10 @@ def register(request):
 class SignInView(LoginView):
     template_name = 'signin.html'
     success_url = 'book'
+
+
+class SignOutView(LogoutView):
+    next_page = 'home'
 
 
 def book(request):

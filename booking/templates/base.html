@@ -60,6 +60,11 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'signin' %}">Sign In</a>
             </li>
+            {% if request.user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'signout' %}">Sign Out</a>
+            </li>
+            {% endif %}
             <li class="nav-item">
               <a class="nav-link" href="{% url 'book' %}">Book A Table</a>
             </li>
