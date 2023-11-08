@@ -9,7 +9,17 @@
           <label for="table" class="form-label">Table</label>
           <select class="form-control" id="table" name="table" required>
             <option value="">Select a table...</option>
+            {% for table in tables %}
+            <option value="{{ table.id }}">
+              Table {{ table.number }} ({{ table.capacity }} persons)
+            </option>
+            {% endfor %}
           </select>
+          {% if form.table.errors %}
+          <div class="alert alert-danger mt-2">
+            {{ form.table.errors.as_text }}
+          </div>
+          {% endif %}
         </div>
         <div class="mb-3">
           <label for="date" class="form-label">Date</label>

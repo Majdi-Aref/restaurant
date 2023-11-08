@@ -1,7 +1,6 @@
+from .views import register, SignInView, SignOutView, book
 from django.urls import path
 from . import views
-from .views import SignInView
-from .views import SignOutView
 
 
 urlpatterns = [

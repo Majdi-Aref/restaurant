@@ -1,10 +1,11 @@
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
-from .models import MenuItem
-from .forms import NewUserForm
+from .models import MenuItem, Table
+from .forms import NewUserForm, BookingForm
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
+from django.contrib.auth.decorators import login_required
 
 
 def home(request):
@@ -35,5 +36,13 @@ class SignOutView(LogoutView):
     next_page = 'home'
 
 
+@login_required
 def book(request):
-    return render(request, 'book.html')
+    form = BookingForm()
+    if request.method == 'POST':
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    tables = Table.objects.all()
+    return render(request, 'book.html', {'form': form, 'tables': tables})
