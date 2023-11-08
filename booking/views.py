@@ -15,13 +15,12 @@ def menu(request):
 
 
 def register(request):
+    form = NewUserForm()
     if request.method == 'POST':
         form = NewUserForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('signin')
-    else:
-        form = NewUserForm()
     return render(request, 'register.html', {'form': form})
 
 

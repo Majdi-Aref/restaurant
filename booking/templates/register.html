@@ -14,6 +14,11 @@
             name="username"
             required
           />
+          {% if form.username.errors %}
+          <div class="alert alert-danger mt-2">
+            {{ form.username.errors.as_text }}
+          </div>
+          {% endif %}
         </div>
         <div class="mb-3">
           <label for="id_email" class="form-label">Email</label>
@@ -24,6 +29,11 @@
             name="email"
             required
           />
+          {% if form.email.errors %}
+          <div class="alert alert-danger mt-2">
+            {{ form.email.errors.as_text }}
+          </div>
+          {% endif %}
         </div>
         <div class="mb-3">
           <label for="id_password1" class="form-label">Password</label>
@@ -34,6 +44,11 @@
             name="password1"
             required
           />
+          {% if form.password1.errors %}
+          <div class="alert alert-danger mt-2">
+            {{ form.password1.errors.as_text }}
+          </div>
+          {% endif %}
         </div>
         <div class="mb-3">
           <label for="id_password2" class="form-label">Confirm Password</label>
@@ -44,6 +59,11 @@
             name="password2"
             required
           />
+          {% if form.password2.errors %}
+          <div class="alert alert-danger mt-2">
+            {{ form.password2.errors.as_text }}
+          </div>
+          {% endif %}
         </div>
         <button type="submit" class="btn btn-primary">Register</button>
       </form>
