@@ -1,7 +1,7 @@
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
-from .models import MenuItem, Table
+from .models import MenuItem, Table, Booking
 from .forms import NewUserForm, BookingForm
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
@@ -37,6 +37,12 @@ class SignOutView(LogoutView):
 
 
 @login_required
+def my_bookings(request):
+    bookings = Booking.objects.filter(user=request.user)
+    return render(request, 'my_bookings.html', {'bookings': bookings})
+
+
+@login_required
 def book(request):
     if request.method == 'POST':
         form = BookingForm(request.POST)
@@ -49,3 +55,11 @@ def book(request):
         form = BookingForm()
     tables = Table.objects.all()
     return render(request, 'book.html', {'form': form, 'tables': tables})
+
+
+@login_required
+def cancel_booking(request, booking_id):
+    booking = Booking.objects.get(id=booking_id)
+    if booking.user == request.user:
+        booking.delete()
+    return redirect('my_bookings')

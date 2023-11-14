@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block content %}
+<div class="container mt-5">
+  <h2 class="text-center">My Bookings</h2>
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      {% for booking in bookings %}
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">{{ booking.table }}</h5>
+          <p class="card-text">Date: {{ booking.date }}</p>
+          <p class="card-text">Time: {{ booking.time }}</p>
+          <p class="card-text">Guests: {{ booking.guests }}</p>
+          <a href="{% url 'cancel_booking' booking.id %}" class="btn btn-danger"
+            >Cancel Booking</a
+          >
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
