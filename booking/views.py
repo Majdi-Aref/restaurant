@@ -6,6 +6,7 @@ from .forms import NewUserForm, BookingForm
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 def home(request):
@@ -23,6 +24,8 @@ def register(request):
         form = NewUserForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(
+                request, 'You have successfully registered, please sign in to be able to book a table.')
             return redirect('signin')
     return render(request, 'register.html', {'form': form})
 
