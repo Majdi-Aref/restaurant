@@ -59,7 +59,7 @@ def book(request):
             booking = form.save(commit=False)
             booking.user = request.user
             booking.save()
-            return redirect('home')
+            return redirect('my_bookings')
     else:
         form = BookingForm()
     tables = Table.objects.all()
@@ -72,5 +72,5 @@ def cancel_booking(request, booking_id):
     if booking.user == request.user:
         booking.delete()
         messages.success(
-            request, 'You have successfully cancelled this booking.')
+            request, 'You have successfully cancelled the selected booking.')
     return redirect('my_bookings')
