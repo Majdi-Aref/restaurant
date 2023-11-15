@@ -71,4 +71,6 @@ def cancel_booking(request, booking_id):
     booking = Booking.objects.get(id=booking_id)
     if booking.user == request.user:
         booking.delete()
+        messages.success(
+            request, 'You have successfully cancelled this booking.')
     return redirect('my_bookings')
