@@ -37,7 +37,7 @@ class SignInView(LoginView):
     def form_valid(self, form):
         response = super().form_valid(form)
         messages.success(
-            self.request, 'You have successfully signed in, please book a table.')
+            self.request, 'You have successfully signed in; you can now book a table! After booking a table, please check "My Bookings".')
         return response
 
 
