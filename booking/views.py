@@ -34,6 +34,12 @@ class SignInView(LoginView):
     template_name = 'signin.html'
     success_url = 'book'
 
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        messages.success(
+            self.request, 'You have successfully signed in, please book a table.')
+        return response
+
 
 class SignOutView(LogoutView):
     next_page = 'home'
