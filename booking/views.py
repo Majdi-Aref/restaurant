@@ -1,4 +1,4 @@
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from .models import MenuItem, Table, Booking
@@ -41,8 +41,10 @@ class SignInView(LoginView):
         return response
 
 
-class SignOutView(LogoutView):
-    next_page = 'home'
+def signout(request):
+    logout(request)
+    messages.success(request, 'You have successfully signed out!')
+    return redirect('home')
 
 
 @login_required
