@@ -37,7 +37,7 @@ class SignInView(LoginView):
     def form_valid(self, form):
         response = super().form_valid(form)
         messages.success(
-            self.request, 'You have successfully signed in; you can now book a table! After booking a table, please check "My Bookings".')
+            self.request, 'You have successfully signed in; you can now book a table! If you have already booked a table, please first check "My Bookings".')
         return response
 
 
@@ -59,6 +59,7 @@ def book(request):
             booking = form.save(commit=False)
             booking.user = request.user
             booking.save()
+            messages.success(request, 'You have successfully booked a table!')
             return redirect('my_bookings')
     else:
         form = BookingForm()
