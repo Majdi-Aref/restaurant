@@ -39,10 +39,17 @@ class BookingForm(forms.ModelForm):
         cleaned_data = super().clean()
         table = cleaned_data.get('table')
         guests = cleaned_data.get('guests')
+        date = cleaned_data.get('date')
+        time = cleaned_data.get('time')
 
         if table and guests:
             if guests <= 0 or guests > table.capacity:
                 raise ValidationError(
                     'You have entered an invalid number of guests; please enter a number of guests that is not zero, equal to, or less than the capacity of the table that you want to book!')
+
+        if table and date and time:
+            if Booking.objects.filter(table=table, date=date, time=time).exists():
+                raise ValidationError(
+                    'The table you want to book for the date and time you have chosen has already been booked by another customer; please choose another table, date, or time for your booking!')
 
         return cleaned_data
