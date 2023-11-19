@@ -5,7 +5,9 @@
   <div class="row justify-content-center">
     <div class="col-lg-6">
       <form method="POST">
-        {% csrf_token %}
+        {% csrf_token %} {% if form.non_field_errors %}
+        <div class="alert alert-danger mt-2">{{ form.non_field_errors }}</div>
+        {% endif %}
         <div class="mb-3">
           <label for="table" class="form-label">Table</label>
           <select class="form-control" id="table" name="table" required>
@@ -38,9 +40,6 @@
           >
           {{ form.time }}
         </div>
-        {% if form.non_field_errors %}
-        <div class="alert alert-danger">{{ form.non_field_errors }}</div>
-        {% endif %}
         <div class="mb-3">
           <label for="guests" class="form-label">Number of Guests</label>
           <input
