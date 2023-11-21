@@ -1,12 +1,13 @@
 from django.contrib.auth import login, logout
 from django.contrib.auth.forms import UserCreationForm
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import MenuItem, Table, Booking
 from .forms import NewUserForm, BookingForm
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.db import transaction
 
 
 def home(request):
@@ -67,6 +68,30 @@ def book(request):
         form = BookingForm()
     tables = Table.objects.all()
     return render(request, 'book.html', {'form': form, 'tables': tables})
+
+
+@login_required
+@transaction.atomic
+def update_booking(request, booking_id):
+    booking = Booking.objects.select_for_update().get(id=booking_id)
+    if booking.user != request.user:
+        return redirect('my_bookings')
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            booking = form.save(commit=False)
+            booking.user = request.user
+            booking.save()
+            messages.success(
+                request, 'You have successfully updated this booking!')
+            return redirect('my_bookings')
+        else:
+            messages.error(
+                request, 'The details you have just chosen are not available, please choose other booking details to be able to update this booking.')
+    else:
+        form = BookingForm(instance=booking)
+    tables = Table.objects.all()
+    return render(request, 'update_booking.html', {'form': form, 'tables': tables})
 
 
 @login_required
