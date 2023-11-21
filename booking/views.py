@@ -7,7 +7,6 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.db import transaction
 
 
 def home(request):
@@ -71,9 +70,14 @@ def book(request):
 
 
 @login_required
-@transaction.atomic
+def my_bookings(request):
+    bookings = Booking.objects.filter(user=request.user)
+    return render(request, 'my_bookings.html', {'bookings': bookings})
+
+
+@login_required
 def update_booking(request, booking_id):
-    booking = Booking.objects.select_for_update().get(id=booking_id)
+    booking = Booking.objects.get(id=booking_id)
     if booking.user != request.user:
         return redirect('my_bookings')
     if request.method == 'POST':
