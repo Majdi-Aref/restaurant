@@ -1,12 +1,12 @@
 {% extends "base.html" %} {% block content %}
 <div class="container mt-5">
-  <h2 class="text-center">My Bookings</h2>
+  <h3 class="text-center">My Bookings</h3>
   <div class="row justify-content-center">
     <div class="col-lg-6">
       {% for booking in bookings %}
       <div class="card mb-4">
         <div class="card-body">
-          <h5 class="card-title">{{ booking.table }}</h5>
+          <p class="card-text">{{ booking.table }}</p>
           <p class="card-text">Date: {{ booking.date }}</p>
           <p class="card-text">Time: {{ booking.time }}</p>
           <p class="card-text">Guests: {{ booking.guests }}</p>
