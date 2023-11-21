@@ -52,4 +52,13 @@
     </div>
   </div>
 </div>
+
+<!-- JavaScript function to prevent a user from selecting dates in the past while they will be booking -->
+<script>
+  window.onload = function () {
+    var today = new Date().toISOString().substring(0, 10);
+    document.getElementById("date").min = today;
+  };
+</script>
+
 {% endblock %}
