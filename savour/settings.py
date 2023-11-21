@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'booking/templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['savour-8ce84994befd.herokuapp.com',
                  '8000-majdi-aref-restaurant-qtl2lgzjr6.us2.codeanyapp.com', 'localhost']
