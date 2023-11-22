@@ -75,7 +75,7 @@
 
 <!-- JavaScript function that ensures a username has at least 6 characters -->
 <script>
-  var usernameInput = document.querySelector("#id_username");
+  const usernameInput = document.querySelector("#id_username");
   function validateUsername() {
     if (usernameInput.value.length < 6) {
       usernameInput.setCustomValidity(

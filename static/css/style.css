@@ -1,7 +1,18 @@
 body {
-    background-color: bisque;
+    font-family: "Onest", "Open Sans", "Lato", "Roboto";
 }
 
 h1 {
-    font-family: 'Bakbak One', cursive;
+    font-family: "Bakbak One", "Open Sans",
+        "Lato",
+        "Roboto";
+    color: #d4390f;
+}
+
+h4,
+h6,
+a {
+    font-family: "Bakbak One", "Open Sans",
+        "Lato",
+        "Roboto";
 }

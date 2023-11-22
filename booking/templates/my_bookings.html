@@ -20,8 +20,7 @@
           <div>
             <a
               href="{% url 'cancel_booking' booking.id %}"
-              class="btn btn-danger"
-              onclick="return confirm('Are you sure you want to cancel this booking?')"
+              class="btn btn-danger cancel-booking-button"
               >Cancel Booking</a
             >
           </div>
@@ -31,4 +30,16 @@
     </div>
   </div>
 </div>
+
+<!-- JS function to let a user be sure before they cancel a booking -->
+<script>
+  const cancelButton = document.querySelector(".cancel-booking-button");
+  function confirmCancellation(e) {
+    if (confirm("Are you sure you want to cancel this booking?") === false) {
+      e.preventDefault();
+    }
+  }
+  cancelButton.addEventListener("click", confirmCancellation);
+</script>
+
 {% endblock %}
