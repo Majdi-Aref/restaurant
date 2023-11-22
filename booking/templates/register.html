@@ -72,4 +72,20 @@
     </div>
   </div>
 </div>
+
+<!-- JavaScript function that ensures a username has at least 6 characters -->
+<script>
+  var usernameInput = document.querySelector("#id_username");
+  function validateUsername() {
+    if (usernameInput.value.length < 6) {
+      usernameInput.setCustomValidity(
+        "Username must be at least 6 characters long"
+      );
+    } else {
+      usernameInput.setCustomValidity("");
+    }
+  }
+  usernameInput.addEventListener("input", validateUsername);
+</script>
+
 {% endblock %}
