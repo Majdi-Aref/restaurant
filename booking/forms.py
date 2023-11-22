@@ -6,6 +6,11 @@ from django.core.exceptions import ValidationError
 
 
 class NewUserForm(UserCreationForm):
+    """
+    Class for creating a new user form.
+    It inherits from Django's built-in UserCreationForm.
+    It includes an email field.
+    """
     email = forms.EmailField(required=True)
 
     class Meta:
@@ -13,6 +18,9 @@ class NewUserForm(UserCreationForm):
         fields = ("username", "email", "password1", "password2")
 
     def save(self, commit=True):
+        """
+        Overrides the save method to include the email field.
+        """
         user = super(NewUserForm, self).save(commit=False)
         user.email = self.cleaned_data['email']
         if commit:
@@ -21,6 +29,10 @@ class NewUserForm(UserCreationForm):
 
 
 class ChoiceTimeField(forms.TimeField):
+    """
+    Providing pre-defined times for booking to choose from.
+    """
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -29,6 +41,9 @@ class ChoiceTimeField(forms.TimeField):
 
 
 class BookingForm(forms.ModelForm):
+    """
+    Form for creating a new booking.
+    """
     time = ChoiceTimeField()
 
     class Meta:
@@ -36,6 +51,11 @@ class BookingForm(forms.ModelForm):
         fields = ['table', 'date', 'time', 'guests']
 
     def clean(self):
+        """
+        Custom validation for the form.
+        Ensures a user enters a valid number of guests.
+        Prevents double bookings.
+        """
         cleaned_data = super().clean()
         table = cleaned_data.get('table')
         guests = cleaned_data.get('guests')

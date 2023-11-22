@@ -10,15 +10,25 @@ from django.contrib import messages
 
 
 def home(request):
+    """
+    View function for the home page of the restaurant.
+    """
     return render(request, 'home.html')
 
 
 def menu(request):
+    """
+    View function for the restaurant menu.
+    """
     menu_items = MenuItem.objects.all()
     return render(request, 'menu.html', {'menu_items': menu_items})
 
 
 def register(request):
+    """
+    View function for the restaurant registration page.
+    A message will confirm a successful registration.
+    """
     form = NewUserForm()
     if request.method == 'POST':
         form = NewUserForm(request.POST)
@@ -31,6 +41,10 @@ def register(request):
 
 
 class SignInView(LoginView):
+    """
+    Class-based view for the restaurant sign-in page.
+    A message will confirm a successful sign-in.
+    """
     template_name = 'signin.html'
     success_url = 'book'
 
@@ -42,6 +56,10 @@ class SignInView(LoginView):
 
 
 def signout(request):
+    """
+    View function for sign-out on the navigation bar.
+    A message will confirm a successful sign-out.
+    """
     logout(request)
     messages.success(request, 'You have successfully signed out!')
     return redirect('home')
@@ -49,12 +67,19 @@ def signout(request):
 
 @login_required
 def my_bookings(request):
+    """
+    View function for displaying a customer's bookings.
+    """
     bookings = Booking.objects.filter(user=request.user)
     return render(request, 'my_bookings.html', {'bookings': bookings})
 
 
 @login_required
 def book(request):
+    """
+    View function for the restaurant booking page.
+    A message will confirm a successful booking.
+    """
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
@@ -70,13 +95,11 @@ def book(request):
 
 
 @login_required
-def my_bookings(request):
-    bookings = Booking.objects.filter(user=request.user)
-    return render(request, 'my_bookings.html', {'bookings': bookings})
-
-
-@login_required
 def update_booking(request, booking_id):
+    """
+    View function for updating a booking.
+    A message will confirm a successful update.
+    """
     booking = Booking.objects.get(id=booking_id)
     if booking.user != request.user:
         return redirect('my_bookings')
@@ -89,9 +112,6 @@ def update_booking(request, booking_id):
             messages.success(
                 request, 'You have successfully updated this booking!')
             return redirect('my_bookings')
-        else:
-            messages.error(
-                request, 'The details you have just chosen are not available, please choose other booking details to be able to update this booking.')
     else:
         form = BookingForm(instance=booking)
     tables = Table.objects.all()
@@ -100,6 +120,10 @@ def update_booking(request, booking_id):
 
 @login_required
 def cancel_booking(request, booking_id):
+    """
+    View function for cancelling a booking.
+    A message will confirm a successful cancellation.
+    """
     booking = Booking.objects.get(id=booking_id)
     if booking.user == request.user:
         booking.delete()
