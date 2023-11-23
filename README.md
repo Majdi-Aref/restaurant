@@ -247,3 +247,13 @@
 ![Sign Out on an iPhone 1](readme-images/signout-iphone-1.png)
 
 ![Sign Out on an iPhone 2](readme-images/signout-iphone-2.png)
+
+# 3. Future Features
+
+- Expanding the restaurant menu with new meals and drinks.
+- Incorporating a functionality that allows a user to buy meals and drinks online.
+- Adding more tables that have new capacities.
+
+# 4. Typography and color scheme
+
+-
