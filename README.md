@@ -256,4 +256,15 @@
 
 # 4. Typography and color scheme
 
--
+- Two Google fonts have been used: "Bakbak One" and "Lato".
+- Four icons from Font Awesome have been implemented: Facebook, Twitter, Instagram, and YouTube.
+- Four colors have been applied: #d4390f, #0000008c, #212529, and #FFFFFF.
+- Nine background colors have been applied: #FFFFFF, #F8F9FA, #3B5998, #55ACEE, #AC2BAC, #DD4B39, #E8F0FE, #0D6EFD, and #DC3545.
+
+# 5. Wireframes
+
+- I created seven Balsamiq wireframes for my project "Savour".
+- Down is a PNG image of the twelve screenshots of all seven wireframes.
+- The screenshots are ordered in a way that reflects the functionalities of "Savour".
+
+!["Savour" website wireframes](readme-images/wireframe-14.png)
