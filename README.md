@@ -184,6 +184,7 @@
 
 ## 2. 8. Book a table
 
+- The "Book a table" button appears on the nav bar only after a user will have signed in.
 - A signed-in user can book a table in "Savour" my means of a booking form that is built in the "Book a table" page.
 - To book a table, a user should choose a certain table from twelve tables for a specific date and time; the user should also choose a certain the number of guests that is 1, 2, 3, 4, 5, or 6.
 - If the table, date, and time that a user chooses are already booked, an error message appears and encourages the user to choose another table, date, or time to be able to book a table.
