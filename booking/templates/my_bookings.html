@@ -34,9 +34,9 @@
 <!-- JS function to let a user be sure before they cancel a booking -->
 <script>
   const cancelButton = document.querySelector(".cancel-booking-button");
-  function confirmCancellation(e) {
+  function confirmCancellation(click) {
     if (confirm("Are you sure you want to cancel this booking?") === false) {
-      e.preventDefault();
+      click.preventDefault();
     }
   }
   cancelButton.addEventListener("click", confirmCancellation);

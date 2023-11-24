@@ -248,7 +248,7 @@
 
 ![Sign Out on an iPhone 2](readme-images/signout-iphone-2.png)
 
-# 3. Future Features
+# 3. Future features
 
 - Expanding the restaurant menu with new meals and drinks.
 - Incorporating a functionality that allows a user to buy meals and drinks online.
@@ -261,10 +261,201 @@
 - Four colors have been applied: #d4390f, #0000008c, #212529, and #FFFFFF.
 - Nine background colors have been applied: #FFFFFF, #F8F9FA, #3B5998, #55ACEE, #AC2BAC, #DD4B39, #E8F0FE, #0D6EFD, and #DC3545.
 
-# 5. Wireframes
+# 5. Wireframes & entity relationship diagrams
+
+## 5. 1. Wireframes
 
 - I created seven Balsamiq wireframes for my project "Savour".
 - Down is a PNG image of the twelve screenshots of all seven wireframes.
 - The screenshots are ordered in a way that reflects the functionalities of "Savour".
 
 !["Savour" website wireframes](readme-images/wireframe-14.png)
+
+## 5. 2. Entity relationship diagrams
+
+- Underneath is the entity relationship diagram, ERD, of "Savour", thanks to Lucidchart.
+- It shows that the "User" model has a one-to-many relationship with each of the "Booking" model and the "Table" model.
+- It also expresses that the "Table" is not only a model but also a field in the "Booking" model.
+
+!["Entity relationship diagram of "Savour"](readme-images/entity-relationship-diagram-1.png)
+
+# 6. Technology
+
+## 6. 1. Codeanywhere
+
+- Codeanywhere is an efficient cloud-based integrated development environment that I employed to write, review, integrate, and deploy the code of "Savour" without any need for installations or configurations on my laptop.
+
+## 6. 2. GitHub
+
+- A platform for version control and collaborative software development, which I used to create a central code repository for and deploy the "Savour".
+- This, in turn, allows me to keep track of changes made to code and revert to previous versions if needed.
+
+## 6. 3. Heroku
+
+- A cloud-based platform that enables developers to build, deploy, and scale modern applications.
+- Heroku supports several programming languages, including Node.js, Ruby, Java, PHP, Python, Go, Scala, and Clojure.
+- Heroku allows developers to focus on code instead of infrastructure and is seamlessly integrated with GitHub.
+- I have deployed "Savour" on Heroku.
+
+## 6. 4. Django & Python
+
+- Python is a high-level, general-purpose programming language.
+- Django is a free and open-source, Python-based web framework that follows the model template views, MTV, architectural pattern.
+- I utilized Django/Python to build most of my "Savour" project.
+
+## 6. 5. Bootstrap 5
+
+- Bootstrap free and open-source CSS framework directed at responsive, mobile-first front-end web development.
+- It contains HTML, CSS and optionally JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+- I utilized Bootstrap 5 to build "Savour" .html templates.
+
+## 6. 6. HTML "HyperText Markup Language"
+
+- The standard markup language for documents designed to be displayed in a web browser.
+- It defines the meaning and structure of web content.
+- It makes a website accessible and provides the relevant structure for search engine optimization.
+- I utilized HTML To build part of the content of "Savour" .html templates.
+
+## 6. 7. CSS "Cascading Style Sheets"
+
+- A style sheet language used for styling the presentation of a document written in a markup language such as HTML or XML.
+- I utilized CSS to add some styling to "Savour" .html templates.
+
+## 6. 8. JavaScript
+
+- A programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
+- I utilized JavaScript to improve the logic of customer registration, table booking, and cancellation of a table booking.
+
+## 6. 9. Google Fonts
+
+- Google Fonts beautifully amplify how a website looks.
+- I made use of two Google fonts in "Savour": "Lato" for the body element of all .html files, and "Bakbak One" font for the website headings.
+- I included two Google fonts as backups: "Open Sans" and "Roboto".
+
+## 6. 10. Font Awesome
+
+- To enhance the visual design of "Savour", I turned to Font Awesome and incorporated four of its fonts into the social media links: Facebook, Twitter, Instagram, and YouTube.
+
+## 6. 11. W3C HTML & CSS validators
+
+- There are two W3C validators: Online tools that check HTML and CSS code.
+- A developer can use them to validate their code by URL, file upload, or direct input.
+- By means of direct input, I have used them both to validate the html and css files of "Savour" website.
+
+## 6. 12. CI Python Linter
+
+- An online website that validates Python code.
+- The Code Institute made this program available for its students; for more details about this program, please contact Code Institute.
+- I used it to validate all .py files of "Savour" by directly inputting the code.
+
+## 6. 13. JSHint
+
+- An online website that validates JavaScript code.
+- I made use of JSHint to validate the JS code of "Savour" by means of direct input.
+
+## 6. 14. Balsamiq Wireframes
+
+- Balsamiq Wireframes is a graphical user interface website wireframe builder application.
+- It allows the designer to arrange pre-built widgets using a drag-and-drop WYSIWYG editor.
+- The application is offered in a desktop version as well as a plug-in for Google Drive, Confluence and JIRA.
+- I used it to create "Savour" frameworks.
+
+## 6. 15. Lucidchart
+
+- A web-based diagramming application that allows users to visually collaborate on drawing, revising and sharing charts and diagrams, and improve processes, systems, and organizational structures.
+- I utilized it to generate the entity relationship diagram of "Savour".
+
+## 6. 16 Cloudinary
+
+- A SaaS technology company.
+- The company provides cloud-based image and video management services.
+- It enables users to upload, store, manage, manipulate, and deliver images and video for websites and apps.
+- I used it to upload, store, manage, manipulate, and deliver images for "Savour".
+
+## 6. 17. Summernote
+
+- A JavaScript library built on Bootstrap that helps you create WYSIWYG editors online.
+- WYSIWYG means "What You See Is What You Get".
+- I used it to edit the description fields of the MenuItem model on my site admin.
+
+## 6. 18. ElephantSQL
+
+- A PostgreSQL database hosting service.
+- It provides fully managed PostgreSQL databases, which means it takes care of administrative tasks such as installation, upgrades to the latest stable version, and backup handling.
+- I made use of it to host the PostgreSQL database of my "Savour" project.
+
+## 6. 19. psycopg2
+
+- The most popular PostgreSQL adapter for the Python programming language.
+  -- Obviously, I used it in building "Savour" to adapt its ElephantSQL database with its Django/Python files.
+
+## 6. 20. Gunicorn
+
+- An intermediary/interface between the web server and a python application.
+- A python web application cannot be deployed on traditional web servers.
+- Python web applications are more complex than static web pages, so you need a WSGI server like Gunicorn specifically intended for Python web applications and frameworks.
+- I installed it into my project "Savour" as the Web Server Gateway Interface (WSGI) server for my Django application so that Heroku can apply it to run "Savour".
+
+## 6. 21. urllib3
+
+- A powerful, user-friendly HTTP client for Python.
+- It is widely used in the Python ecosystem.
+- I utilized it in my project to anable many critical features that are missing from the Python standard libraries such as thread safety and connection pooling.
+
+# 7. Code validation
+
+## 7. 1. base.html
+
+- I validated it by means of the W3C HTML validator.
+- Below is a screenshot that documents this validation; five errors were shown.
+
+!["base.html validation"](readme-images/base-html.png)
+
+## 7. 2. home.html
+
+- I validated it by means of the W3C HTML validator.
+- Below is a screenshot that documents this validation; two errors and two warnings were shown.
+
+!["home.html validation"](readme-images/home-html.png)
+
+## 7. 3. menu.html
+
+- I validated it by means of the W3C HTML validator.
+- Below is a screenshot that documents this validation; three errors and one warning were shown.
+
+!["menu.html validation"](readme-images/menu-html.png)
+
+## 7. 4. register.html
+
+- I validated it by means of the W3C HTML validator.
+- Below is a screenshot that documents this validation; two errors and one warning were shown.
+
+!["register.html validation"](readme-images/register-html.png)
+
+## 7. 5. signin.html
+
+- I validated it by means of the W3C HTML validator.
+- Below is a screenshot that documents this validation; two errors and one warning were shown.
+
+!["signin.html validation"](readme-images/signin-html.png)
+
+## 7. 6. book.html
+
+- I validated it by means of the W3C HTML validator.
+- Below is a screenshot that documents this validation; six errors and one warning were shown.
+
+!["book.html validation"](readme-images/book-html.png)
+
+## 7. 7. update_booking.html
+
+- I validated it by means of the W3C HTML validator.
+- Below is a screenshot that documents this validation; six errors and one warning were shown.
+
+!["update_booking.html validation"](readme-images/update-booking-html.png)
+
+## 7. 8. my_bookings.html
+
+- I validated it by means of the W3C HTML validator.
+- Below is a screenshot that documents this validation; four errors and one warning were shown.
+
+!["my_bookings.html validation"](readme-images/my-bookings-html.png)
