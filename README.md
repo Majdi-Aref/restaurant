@@ -403,6 +403,13 @@
 - It is widely used in the Python ecosystem.
 - I utilized it in my project to anable many critical features that are missing from the Python standard libraries such as thread safety and connection pooling.
 
+## 6. 22. Google Lighthouse report
+
+- An open-source, automated tool for improving the quality of web pages.
+- One can run it against any web page, public or requiring authentication.
+- It has audits for performance, accessibility, progressive web apps, SEO, and more.
+- I used it to assess "Savour" as it will be exhibited underneath in the code validation section.
+
 # 7. Code validation
 
 ## 7. 1. base.html
@@ -530,3 +537,10 @@
 - Below is a screenshot that documents this validation; many warnings were shown.
 
 !["Validation of JavaScript code in the templates"](readme-images/js-functions.png)
+
+## 7. 19. Google Lighthouse report
+
+- The average performance of all "Savour" website pages is 96.5%.
+- Please have a look at the relevant screenshot further down.
+
+!["Google Lighthouse report"](readme-images/lighthouse-report-1.png)
