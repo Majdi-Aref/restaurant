@@ -544,3 +544,21 @@
 - Please have a look at the relevant screenshot further down.
 
 !["Google Lighthouse report"](readme-images/lighthouse-report-1.png)
+
+# 8. Test cases
+
+## 8. 1. Testing the website's logo
+
+- Test description: This test checks the functionality of the website's logo.
+- Steps:
+  - Click on the website's logo.
+- Expected Result: The user should be sent back to the website's home page.
+- Actual Result: The user was sent back to the "Home" page.
+
+## 8. 2. Testing the "Home" link in the navigation bar
+
+- Test description: This test checks the functionality of the "Home" link in the navigation bar.
+- Steps:
+  - Click on the "Home" link in the navigation bar.
+- Expected Result: The user should go to website's home page.
+- Actual Result: The user went to the website's home page.
