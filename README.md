@@ -459,3 +459,73 @@
 - Below is a screenshot that documents this validation; four errors and one warning were shown.
 
 !["my_bookings.html validation"](readme-images/my-bookings-html.png)
+
+## 7. 9. style.css
+
+- I validated it by means of the W3C CSS validator.
+- Below is a screenshot that documents this validation; no errors were shown.
+
+!["style.css validation"](readme-images/style-css.png)
+
+## 7. 10. settings.py
+
+- I validated it by means of CI Python Linter.
+- Below is a screenshot that documents this validation; no errors were found.
+
+!["settings.py validation"](readme-images/settings-py.png)
+
+## 7. 11. models.py
+
+- I validated it by means of CI Python Linter.
+- Below is a screenshot that documents this validation; no errors were found.
+
+!["models.py validation"](readme-images/models-py.png)
+
+## 7. 12. admin.py
+
+- I validated it by means of CI Python Linter.
+- Below is a screenshot that documents this validation; no errors were found.
+
+!["admin.py validation"](readme-images/admin-py.png)
+
+## 7. 13. forms.py
+
+- I validated it by means of CI Python Linter.
+- Below is a screenshot that documents this validation; no errors were found.
+
+!["forms.py validation"](readme-images/forms-py.png)
+
+## 7. 14. views.py
+
+- I validated it by means of CI Python Linter.
+- Below is a screenshot that documents this validation; no errors were found.
+
+!["views.py validation"](readme-images/views-py.png)
+
+## 7. 15. urls.py/savour
+
+- I validated it by means of CI Python Linter.
+- Below is a screenshot that documents this validation; no errors were found.
+
+!["urls.py/savour validation"](readme-images/urls-py-1.png)
+
+## 7. 16. urls.py/booking
+
+- I validated it by means of CI Python Linter.
+- Below is a screenshot that documents this validation; no errors were found.
+
+!["urls.py/booking validation"](readme-images/urls-py-2.png)
+
+## 7. 17. manage.py
+
+- I validated it by means of CI Python Linter.
+- Below is a screenshot that documents this validation; no errors were found.
+
+!["manage.py validation"](readme-images/manage-py.png)
+
+## 7. 18. JavaScript code in register.html, book.html, and my_bookings.html
+
+- I validated it by means of JSHint.
+- Below is a screenshot that documents this validation; many warnings were shown.
+
+!["Validation of JavaScript code in the templates"](readme-images/js-functions.png)
