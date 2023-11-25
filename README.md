@@ -5,6 +5,8 @@
 - I developed "Savour" as my project portfolio 4 for my remote, full-stack software development diploma with the Code Institute in Dublin, Ireland.
 - The name of this project on Github is "restaurant", and its name on Heroku is "savour". The actual name of this project on the restaurant website is "Savour".
 
+![Screenshot demonstrating website responsiveness on all screen sizes](readme-images/responsiveness-1.png)
+
 # 1. User stories:
 
 ## 1. 1. Admin wants to add new items to the menu
@@ -552,7 +554,7 @@
 - Test description: This test checks the functionality of the website's logo.
 - Steps:
   - Click on the website's logo.
-- Expected Result: The user should be sent back to the website's home page.
+- Expected Result: The user should be sent back to the website's "Home" page.
 - Actual Result: The user was sent back to the "Home" page.
 
 ## 8. 2. Testing the "Home" link in the navigation bar
@@ -560,5 +562,101 @@
 - Test description: This test checks the functionality of the "Home" link in the navigation bar.
 - Steps:
   - Click on the "Home" link in the navigation bar.
-- Expected Result: The user should go to website's home page.
-- Actual Result: The user went to the website's home page.
+- Expected Result: The user should go to website's "Home" page.
+- Actual Result: The user went to the website's "Home" page.
+
+## 8. 3. Testing the "Menu" link in the navigation bar
+
+- Test description: This test checks the functionality of the "Menu" link in the navigation bar.
+- Steps:
+  - Click on the "Menu" link in the navigation bar.
+- Expected Result: The user should go to website's "Menu" page.
+- Actual Result: The user went to the website's "Menu" page.
+
+## 8. 4. Testing the "Register" link in the navigation bar
+
+- Test description: This test checks the functionality of the "Register" link in the navigation bar.
+- Steps:
+  - Click on the "Register" link in the navigation bar.
+- Expected Result: The user should go to website's "Register" page.
+- Actual Result: The user went to the website's "Register" page.
+
+## 8. 5. Testing the "Sign In" link in the navigation bar
+
+- Test description: This test checks the functionality of the "Sign In" link in the navigation bar.
+- Steps:
+  - Click on the "Sign In" link in the navigation bar.
+- Expected Result: The user should go to website's "Sign In" page.
+- Actual Result: The user went to the website's "Sign In" page.
+
+## 8. 6. Testing the "My Bookings" link in the navigation bar
+
+- Test description: This test checks the functionality of the "My Bookings" link in the navigation bar provided that the user has already signed in.
+- Steps:
+  - Click on the "My Bookings" link in the navigation bar.
+- Expected Result: The user should go to website's "My Bookings" page.
+- Actual Result: The user went to the website's "My Bookings" page.
+
+## 8. 7. Testing the "Book A Table" link in the navigation bar
+
+- Test description: This test checks the functionality of the "Book A Table" link in the navigation bar provided that the user has already signed in.
+- Steps:
+  - Click on the "Book A Table" link in the navigation bar.
+- Expected Result: The user should go to website's "Book A Table" page.
+- Actual Result: The user went to the website's "Book A Table" page.
+
+## 8. 8. Testing the "Sign Out" link in the navigation bar
+
+- Test description: This test checks the functionality of the "Sign Out" link in the navigation bar provided that the user has already signed in.
+- Steps:
+  - Click on the "Sign Out" link in the navigation bar.
+- Expected Result: The user should be signed out of their account and redirected into the "Home" page.
+- Actual Result: The user has been signed out of their account and redirected into the "Home" page.
+
+## 8. 9. Testing the link to "Savour" Facebook page in the footer
+
+- Test description: This test checks the functionality of the link to "Savour" Facebook page in the footer.
+- Steps:
+  - Click on the link to "Savour" Facebook page in the footer.
+- Expected Result: "Savour" Facebook page should be opened in a new tab for the user.
+- Actual Result: The "Savour" Facebook page was opened in a new tab for the user.
+
+## 8. 10. Testing the link to "Savour" Instagram page in the footer
+
+- Test description: This test checks the functionality of the link to "Savour" Instagram page in the footer.
+- Steps:
+  - Click on the link to "Savour" Instagram page in the footer.
+- Expected Result: "Savour" Instagram page should be opened in a new tab for the user.
+- Actual Result: The "Savour" Instagram page was opened in a new tab for the user.
+
+## 8. 11. Testing the link to "Savour" Twitter page in the footer
+
+- Test description: This test checks the functionality of the link to "Savour" Twitter page in the footer.
+- Steps:
+  - Click on the link to "Savour" Twitter page in the footer.
+- Expected Result: "Savour" Twitter page should be opened in a new tab for the user.
+- Actual Result: The "Savour" Twitter page was opened in a new tab for the user.
+
+## 8. 12. Testing the link to "Savour" YouTube page in the footer
+
+- Test description: This test checks the functionality of the link to "Savour" YouTube page in the footer.
+- Steps:
+  - Click on the link to "Savour" YouTube page in the footer.
+- Expected Result: "Savour" YouTube page should be opened in a new tab for the user.
+- Actual Result: The "Savour" YouTube page was opened in a new tab for the user.
+
+## 8. 13. Testing the "Register" form
+
+- Test description: This test checks the functionality of the "Register" form.
+- Steps:
+  - The user should enter a username, an email, and a password in the respective input fields; a user should confirm their password in a separate input field.
+- Expected Results:
+
+  - If the user enters a username that is less than six characters long, a message will appear and urge them to do that.
+  - The register form examines the right formula of an email. If its formula was not correct, an error message will appear and invites the user to correct their email.
+  - As a user enters their password, it must be at least eight characters long, otherwise an error message will appear and demands that from the user.
+  - As a user confirms their password, the two must be identical; if not, an error message will become visible and
+    If a registration has been successful, a confirmation message will emerge and a user will be simultaneously moved into the sign-in page and urged to sign in to be able to book a table.
+
+- Actual Result: The "Savour" YouTube page was opened in a new tab for the user.
+-

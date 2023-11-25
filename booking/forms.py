@@ -17,6 +17,17 @@ class NewUserForm(UserCreationForm):
         model = User
         fields = ("username", "email", "password1", "password2")
 
+    def clean_email(self):
+        """
+        Validation of the email field.
+        Ensures a user cannot register with an email that is already registered.
+        """
+        email = self.cleaned_data.get('email')
+        if User.objects.filter(email=email).exists():
+            raise forms.ValidationError(
+                "The email you just entered is already registered, please enter another email.")
+        return email
+
     def save(self, commit=True):
         """
         Overrides the save method to include the email field.
@@ -30,7 +41,7 @@ class NewUserForm(UserCreationForm):
 
 class ChoiceTimeField(forms.TimeField):
     """
-    Providing pre-defined times for booking to choose from.
+    Provides pre-defined times for booking to choose from.
     """
 
     def __init__(self, *args, **kwargs):
