@@ -647,16 +647,98 @@
 
 ## 8. 13. Testing the "Register" form
 
-- Test description: This test checks the functionality of the "Register" form.
+- Test description:
+  - This test checks the functionality of the "Register" form.
 - Steps:
-  - The user should enter a username, an email, and a password in the respective input fields; a user should confirm their password in a separate input field.
+  - The user should enter a username, an email, and a password in the respective input fields of the register form; a user should confirm their password in a separate input field.
 - Expected Results:
+  - If the user enters a username that is less than six characters long, a message will appear and urge them to enter a username that is at least six characters long.
+  - If the user enters a username that is already registered, a message will appear and notify them about that.
+  - The register form examines the syntax of an email address. If its formula is not correct, an error message will appear and invite the user to correct it.
+  - If the user enters an email that is already registered, a message will pop up and urge them the enter another email.
+  - As a user enters their password, it must be at least eight characters long, otherwise an error message will appear and demand that from the user.
+  - As a user confirms their password, the two must be identical; if not, an error message will become visible and bring that into their attention.
+  - If a registration has been successful, a confirmation message will emerge and a user will be simultaneously redirected into the sign-in page and urged to sign in to be able to book a table.
+- Actual Results:
+  - The actual results are identical to the expected results.
+- Please have a look at the screenshot below.
 
-  - If the user enters a username that is less than six characters long, a message will appear and urge them to do that.
-  - The register form examines the right formula of an email. If its formula was not correct, an error message will appear and invites the user to correct their email.
-  - As a user enters their password, it must be at least eight characters long, otherwise an error message will appear and demands that from the user.
-  - As a user confirms their password, the two must be identical; if not, an error message will become visible and
-    If a registration has been successful, a confirmation message will emerge and a user will be simultaneously moved into the sign-in page and urged to sign in to be able to book a table.
+!["Testing the register form"](readme-images/testing-register-1.png)
 
-- Actual Result: The "Savour" YouTube page was opened in a new tab for the user.
--
+## 8. 14. Testing the "Sing In" form
+
+- Test description:
+  - This test checks the functionality of the sign-in form.
+- Steps:
+  - The user enters their username and password in the recpective input fields of the sign-in form.
+- Expected Results:
+  - If the user entered an invalid username or an invalid password, a message will appear and ask the user to enter a correct username and password.
+  - As a user successfully signs in, a confirmation message materializes, and the user will be redirected into the booking page to be able to book a restaurant table.
+- Actual results:
+  - The actual results are identical to the expected results.
+- Please have a look at the screenshot below.
+
+!["Testing the signin form"](readme-images/testing-signin-1.png)
+
+## 8. 15. Testing the "Book A Table" form
+
+- Test description:
+  - This test checks the functionality of the "Book A Table" form.
+- Steps:
+  - The user chooses a table from the tables list, a date, and a time from the times list, then they enter the number of guests that they will bring to the table.
+- Expected Results:
+  - If the user chooses to book a combination of a table, a date and a time that is already booked, a message will surface, tell them that their combination of table, date, and time is already booked and ask them to choose another combination to be able to book a table.
+  - If the user chooses a table and a number guests that does not match the capacity of that table, a message will manifest itself, tell the user about that, and request from them to choose a number of guests that is equal or less than the capacity of the table they want to book.
+  - If a booking is successful, a message will appear and tell the user that they have successfully booked a table. At the same time, the user will be redirected into the "My Bookings" page where they can see their bookings in detail.
+- Actual results:
+  - The actual results are identical to the expected results.
+- Please have a look at the screenshot below.
+
+!["Testing the booking form"](readme-images/testing-booking-1.png)
+
+## 8. 16. Testing the "Update Booking" button on "My Bookings" page
+
+- Test description:
+  - This test checks the "Update Booking" button on "My Bookings" page, which exists under the details of each booking.
+- Steps:
+  - The user clicks on the "Update Booking" button on "My Bookings" page.
+- Expected Results:
+  - A new booking form opens with the heading "Update Booking".
+  - The user specifies how they want to update their booking; they can update each element of their booking.
+  - If a booking is successfully updated, a message will appear and tell the user that they have successfully updated their booking. At the same time, the user will be redirected into the "My Bookings" page where they can see their bookings in detail.
+- Actual results:
+  - The actual results are identical to the expected results.
+- Please have a look at the screenshot below.
+
+!["Testing the 'Update Booking' button"](readme-images/testing-update-booking-1.png)
+
+## 8. 17. Testing the "Cancel Booking" button on "My Bookings" page
+
+- Test description:
+  - This test checks the "Cancel Booking" button on "My Bookings" page, which exists below the details of each booking under the "Update Booking" button.
+- Steps:
+  - The user clicks on the "Cancel Booking" button on "My Bookings" page.
+- Expected Results:
+  - A message pops up at the top of the page asking the user if they are sure they want to cancel the selected booking. If the user clicks on "OK", that booking will be cancelled and a new message will appear and tell the user they have successfully cancelled the selected booking.
+- Actual results:
+  - The actual results are identical to the expected results.
+- Please have a look at the screenshot below.
+
+!["Testing the 'Cancel Booking' button"](readme-images/testing-cancel-booking-1.png)
+
+## 8. 18. Testing the "Sign Out" link in the navigation bar
+
+- Test description:
+  - This test checks the functionality of the "Sign Out" link in the navigation bar.
+- Steps:
+  - The user clicks on the "Sign Out" link in the navigation bar.
+- Expected Results:
+  - The user will be signed out of their account.
+  - A message will become visible to the user confirming to them that they have successfully signed out of their account.
+  - At the same time, the user will be redirected to "Savour" home page.
+  - Also, the "My Bookings", "Sign Out", and "Book A Table" links will disappear from the navigation bar.
+- Actual results:
+  - The actual results are identical to the expected results.
+- Please have a look at the screenshot below.
+
+!["Testing the 'Sign Out' link in the nav bar"](readme-images/testing-signout-1.png)
