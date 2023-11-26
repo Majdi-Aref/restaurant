@@ -765,16 +765,18 @@
 
 ## 11. 1. Via Codeanywhere
 
-- Codeanywhere is a cloud-based development environment that allows you to develop, build, and deploy your website in the cloud.
-- Open an account and create a new repository on Github.
-- Open Codeanywhere workspaces, then create a new workspace for the new repository that you created on Github; Codeanywhere will save the workspace that you created.
-- Open the Codeanywhere workspace that you just created.
-- As soon as you have opened your repository workspace in Codeanywhere, you can use a terminal to run the necessary commands to build and deploy your website.
-- Create any files you need to build your project in the root directory.
-- Type in a Codeanywhere terminal the command: "python3 manage.py runserver", a small window opens at the right bottom corner for "ports".
-- In that small window, click on "Browser" of "Port 8000"; this opens your Github's repository through your Codeanywhere workspace in a browser in a new tab.
-- Press at that same time "Control + Shift + R" to refresh your browser.
-- Press at the same time "Control + S" to save the code you create in Codeanywhere worksace; this will automatically save it in your applicable file in your Codeanywhere workspaces.
-- Type in a Codeanywhere terminal the command: "git add ." to add your project's code and/or documentation that you have created during a working session of yours to your Codeanywhere workspace.
-- Type in a Codeanywhere terminal the command: "git commit -m 'what code, styling, documentation, or corrections you have made or done in your Codeanywhere workspace in just a few words'" to save your project's code and documentation in your Codeanywhere workspace.
-- Type in a Codeanywhere terminal the command: "git push" to push your project's code into your Github's repository, where it will be permanently saved.
+- Codeanywhere is a cloud-based development environment that allows you to develop, build, and deploy your 
+website in the cloud. Follow these steps to deploy your website using Codeanywhere.
+- Open an account and create a new repository on GitHub.
+- Open Codeanywhere workspaces and create a new workspace for the new repository you created on GitHub. Codeanywhere will save the workspace for you.
+Open the Codeanywhere workspace you just created.
+Once you have opened your repository's workspace in Codeanywhere, use the terminal to run the necessary commands to build and deploy your website.
+You can create as many Python files as you need for your project in the root directory.
+Create a readme.md file for your project in the root directory.
+Open a terminal in your Codeanywhere workspace and enter the following command: python3 run.py. Press the "Enter" button to run the command and test your program in the terminal.
+Press "Control + S" simultaneously to save the code you created in the Codeanywhere workspace. This will automatically save it in the applicable file in your Codeanywhere workspace. Alternatively, you can check the "Auto save" option in the "File" list of options.
+In the Codeanywhere terminal, use the command git add . to add your project's code and/or documentation created during your working session to your Codeanywhere workspace.
+Use the command git commit -m 'Brief description of the changes you made in your Codeanywhere workspace' in the Codeanywhere terminal to save your project's code and documentation in your Codeanywhere workspace.
+Use the command git push in the Codeanywhere terminal to save and push your project's code to your GitHub repository.
+If your project requires any supplementary modules, programs, or dependencies that are not automatically available in the hosting platform (in this case, Heroku), you must add them to the requirements.txt file in the root directory of your Codeanywhere workspace. This allows the hosting platform to make the necessary adjustments and installations for your project to be fully functional.
+Since the "create-your-password" program uses the Python module "colorama," make sure to add "colorama" to the requirements.txt file.
