@@ -742,3 +742,21 @@
 - Please have a look at the screenshot below.
 
 !["Testing the 'Sign Out' link in the nav bar"](readme-images/testing-signout-1.png)
+
+# 9. Fixed Bugs
+
+- I have not encountered any bugs.
+
+# 10. Supported screens and browsers
+
+- I have developed "Savour" to fit Laptops, tabs, and smartphones screen sizes.
+- The browser that I used the most is Google Chrome; sometimes I resorted to Microsoft Edge.
+- Please have a look at the screenshots below.
+
+!["Supported screens/ laptop"](readme-images/supported-screens-compound-laptop.png)
+
+!["Supported screens/ Blackberry"](readme-images/supported-screens-compound-blackberry.png)
+
+!["Supported screens/ iPad"](readme-images/supported-screens-compound-ipad.png)
+
+!["Supported screens/ iPhone"](readme-images/supported-screens-compound-iphone.png)
