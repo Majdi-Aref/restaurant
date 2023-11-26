@@ -760,3 +760,21 @@
 !["Supported screens/ iPad"](readme-images/supported-screens-compound-ipad.png)
 
 !["Supported screens/ iPhone"](readme-images/supported-screens-compound-iphone.png)
+
+# 11. Deployment
+
+## 11. 1. Via Codeanywhere
+
+- Codeanywhere is a cloud-based development environment that allows you to develop, build, and deploy your website in the cloud.
+- Open an account and create a new repository on Github.
+- Open Codeanywhere workspaces, then create a new workspace for the new repository that you created on Github; Codeanywhere will save the workspace that you created.
+- Open the Codeanywhere workspace that you just created.
+- As soon as you have opened your repository workspace in Codeanywhere, you can use a terminal to run the necessary commands to build and deploy your website.
+- Create any files you need to build your project in the root directory.
+- Type in a Codeanywhere terminal the command: "python3 manage.py runserver", a small window opens at the right bottom corner for "ports".
+- In that small window, click on "Browser" of "Port 8000"; this opens your Github's repository through your Codeanywhere workspace in a browser in a new tab.
+- Press at that same time "Control + Shift + R" to refresh your browser.
+- Press at the same time "Control + S" to save the code you create in Codeanywhere worksace; this will automatically save it in your applicable file in your Codeanywhere workspaces.
+- Type in a Codeanywhere terminal the command: "git add ." to add your project's code and/or documentation that you have created during a working session of yours to your Codeanywhere workspace.
+- Type in a Codeanywhere terminal the command: "git commit -m 'what code, styling, documentation, or corrections you have made or done in your Codeanywhere workspace in just a few words'" to save your project's code and documentation in your Codeanywhere workspace.
+- Type in a Codeanywhere terminal the command: "git push" to push your project's code into your Github's repository, where it will be permanently saved.
