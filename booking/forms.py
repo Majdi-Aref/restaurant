@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from .models import Booking
 from django.core.exceptions import ValidationError
+from datetime import date, datetime, timedelta
 
 
 class NewUserForm(UserCreationForm):
@@ -56,10 +57,23 @@ class BookingForm(forms.ModelForm):
     Form for creating a new booking.
     """
     time = ChoiceTimeField()
+    guests = forms.ChoiceField(choices=[(i, i) for i in range(1, 7)])
 
     class Meta:
         model = Booking
         fields = ['table', 'date', 'time', 'guests']
+
+    def clean_date(self):
+        """
+        Custom validation for the date field.
+        Prevents a customer from choosing a date earlier than tomorrow.
+        """
+        booking_date = self.cleaned_data.get('date')
+        tomorrow = date.today() + timedelta(days=1)
+        if booking_date and booking_date < tomorrow:
+            raise forms.ValidationError(
+                "You cannot choose a date earlier than tomorrow!")
+        return booking_date
 
     def clean(self):
         """
@@ -74,9 +88,10 @@ class BookingForm(forms.ModelForm):
         time = cleaned_data.get('time')
 
         if table and guests:
-            if guests <= 0 or guests > table.capacity:
+            guests = int(guests)
+            if guests > table.capacity:
                 raise ValidationError(
-                    'You have entered an invalid number of guests; please enter a number of guests that is not zero, equal to, or less than the capacity of the table that you want to book!')
+                    'You have entered an invalid number of guests; please enter a number of guests that is equal to or less than the capacity of the table that you want to book!')
 
         if table and date and time:
             if Booking.objects.filter(table=table, date=date, time=time).exists():

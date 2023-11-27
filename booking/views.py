@@ -100,7 +100,7 @@ def update_booking(request, booking_id):
     View function for updating a booking.
     A message will confirm a successful update.
     """
-    booking = Booking.objects.get(id=booking_id)
+    booking = get_object_or_404(Booking, id=booking_id)
     if booking.user != request.user:
         return redirect('my_bookings')
     if request.method == 'POST':

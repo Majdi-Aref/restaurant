@@ -28,6 +28,11 @@
             name="date"
             required
           />
+          {% if form.date.errors %}
+          <div class="alert alert-danger mt-2">
+            {{ form.date.errors.as_text }}
+          </div>
+          {% endif %}
         </div>
         <div class="mb-3">
           <label for="{{ form.time.id_for_label }}" class="form-label"
@@ -52,13 +57,5 @@
     </div>
   </div>
 </div>
-
-<!-- JavaScript function to prevent a user from selecting dates in the past while they will be booking -->
-<script>
-  window.onload = function () {
-    const today = new Date().toISOString().substring(0, 10);
-    document.getElementById("date").min = today;
-  };
-</script>
 
 {% endblock %}
