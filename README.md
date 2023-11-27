@@ -996,3 +996,6 @@
 - E.g Github as deployment method, on main branch.
 - Then you can activate automatic deploys on Heroku.
 
+# 12. Credits
+
+- 
