@@ -765,18 +765,234 @@
 
 ## 11. 1. Via Codeanywhere
 
-- Codeanywhere is a cloud-based development environment that allows you to develop, build, and deploy your 
-website in the cloud. Follow these steps to deploy your website using Codeanywhere.
+- Codeanywhere is a cloud-based development environment that allows you to develop, build, and deploy your website in the cloud.
+- Please execute the following steps to deploy your website by means of Codeanywhere.
 - Open an account and create a new repository on GitHub.
 - Open Codeanywhere workspaces and create a new workspace for the new repository you created on GitHub. Codeanywhere will save the workspace for you.
-Open the Codeanywhere workspace you just created.
-Once you have opened your repository's workspace in Codeanywhere, use the terminal to run the necessary commands to build and deploy your website.
-You can create as many Python files as you need for your project in the root directory.
-Create a readme.md file for your project in the root directory.
-Open a terminal in your Codeanywhere workspace and enter the following command: python3 run.py. Press the "Enter" button to run the command and test your program in the terminal.
-Press "Control + S" simultaneously to save the code you created in the Codeanywhere workspace. This will automatically save it in the applicable file in your Codeanywhere workspace. Alternatively, you can check the "Auto save" option in the "File" list of options.
-In the Codeanywhere terminal, use the command git add . to add your project's code and/or documentation created during your working session to your Codeanywhere workspace.
-Use the command git commit -m 'Brief description of the changes you made in your Codeanywhere workspace' in the Codeanywhere terminal to save your project's code and documentation in your Codeanywhere workspace.
-Use the command git push in the Codeanywhere terminal to save and push your project's code to your GitHub repository.
-If your project requires any supplementary modules, programs, or dependencies that are not automatically available in the hosting platform (in this case, Heroku), you must add them to the requirements.txt file in the root directory of your Codeanywhere workspace. This allows the hosting platform to make the necessary adjustments and installations for your project to be fully functional.
-Since the "create-your-password" program uses the Python module "colorama," make sure to add "colorama" to the requirements.txt file.
+- Open the Codeanywhere workspace you just created.
+- Once you have opened your repository's workspace in Codeanywhere, use the terminal to run the necessary commands to build and deploy your website.
+- You can create any files you need for your project in the root directory of your Codeanywhere workspace.
+- Open a terminal on your Codeanywhere workspace and enter the following command: 'python3 manage.py runserver' and press the "Enter" button to run the command and view your project on your browser.
+- Press "Control+S" simultaneously to save the code you created in your file on your Codeanywhere workspace. Alternatively, you can check the "Auto save" option in the "File" in the navigation bar of your Codeanywhere workspace.
+- You can also save all your work in all files of your Codeanywhere workspace by pressing "Control+Alt+S" simultaneously.
+- On your Codeanywhere terminal, use the command 'git add .' to add your project's code and/or documentation you created during a working session to your Codeanywhere workspace.
+- Use the command "git commit -m 'brief description of the changes you made in your Codeanywhere workspace'" in your Codeanywhere terminal to save your project's code, content, and documentation in your Codeanywhere workspace.
+- Use the command 'git push' in your Codeanywhere terminal to save and push your project's code and content into your GitHub repository.
+- If your project requires any supplementary modules, programs, or dependencies that are not automatically available in the hosting platform you are utilizing "in my project: Heroku", you must add them to the requirements.txt file in the root directory of your Codeanywhere workspace. This allows the hosting platform to make the necessary adjustments and installations for your project to be fully functional.
+
+## 11. 2. Via Github
+
+- GitHub is a free code hosting platform for version control and collaboration.
+- It allows you and others to work together on projects from anywhere.
+- Open GitHub and sign in.
+- Using the menu in the top-right corner, click on "Your repositories".
+- Create a repository for your project and give it a specific name.
+- Use the link of that GitHub repository to create a workspace on Codeanywhere.
+- Once you have created the workspace on Codeanywhere, you can develop your project the way you want.
+- As you commit and push your project code and content via Codeanywhere, as explained above, your project code and content will be automatically saved in your relevant GitHub repository.
+
+## 11 . 3. Via Heroku
+
+- Heroku is a platform that can handle backend programing languages such as Python, which Github can not.
+- Therefore, when we build a project with Python/Django, we need a deploy it on a platform like Heroku so that we can let others see it in action.
+- As stated above, you should already have put all the dependencies of your project in the 'requirements.txt' file of your project.
+- Plaase type in the following command in the terminal of your Codeanywhere's workspace: "pip3 freeze > requirements.txt" and then press enter.
+- Once you have done that, Heroku searches fo, finds that file, requirements.txt, and installs all the dependencies that are listed inside it before running the project's code.
+- Please do not forget to add, commit, and push those changes from your Codeanywhere worksapce to Github.
+- How can you sign up for an account by Heroku?
+  - Open Heroku's website.
+  - In the process of signing up for an account with Heroku, I have selected "Student" as a "Role" because I am now a student at the Code Institute. For the "Primary development language" I have selected "Python" as I have written the "Savour" with Django/Python.
+  - Once you have finished entering the details of your signing up, click on "CREATE FREE ACCOUNT", which is on the bottom right of the sign-up page.
+  - Heroku will send you then a confirmation email; please open it and click on the link provided to confirm that the email-address you used as you have signed up is yours.
+  - Once you've done that, Heroku will take you to another page to enter your password. When you have entered your password, please click on "SET PASSWORD AND LOG IN". A welcome message will open, on which you should click on "CLICK HERE TO PROCEED".
+  - After that, the page for "Terms of Service" on Heroku will open. Click on "Accept," which you can find at the bottom-middle of that page.
+  - Now the dashboard page of your Heroku account will pop up. Your apps will be listed on this page. You can have up to 5 apps with your free account. If you want to have more, you will need to purchase a certain paid service from Heroku.
+- How can you create an app with Heroku?
+  - From the Heroku dashboard, click the "Create new app" button.
+  - A "Create New App" page will open."
+- How can I set up the "Create New App" page?
+  - Enter a unique name for your app in the input field labelled "App name". I selected "Savour" for my project.
+  - Click on "Choose a region" and select your region.
+  - Then, click on the "Create app" button.
+  - A new page for the app that you have just created will open.
+- How can I set up the app's page that I have just created?
+  - On the app's page that you have just created, you can find a big menu bar on the top left.
+  - You should focus on two sections in that menu bar: "Settings" and "Deploy."
+  - It's important to configure your settings section correctly before you deploy your code.
+- How can I set up the "Settings" section?
+  - Click on the "Settings" section.
+  - On the "Settings" section, scroll down to the "Config Vars" subsection.
+- How can I set up the "Config Vars" subsection?
+  - Click on "Reveal Config Vars" on the left to be able to create a config var.
+  - Enter "PORT" in the field of a new "KEY"; enter "8000" in the field for "VALUE", then click on "Add".
+  - Enter "CLOUDINARY_URL" in the field of a new "KEY"; the "VALUE" of it is the value of your API Environment variable on your Cloudinary account. Then click on "Add".
+  - Enter "DATABASE_URL" in the field of a new "KEY"; the "VALUE" of it is the value of the URL of your respective project instance on your ElephantSQL account. Then click on "Add".
+  - Enter "SECRET_KEY" in the field of a new "KEY"; the "VALUE" of it is the value of your "SECRET_KEY" variable you created in your env.py file in the root directory of your project Codeanywhere workspace. Then click on "Add".
+  - Enter "DISABLE_COLLECTSTATIC" in the field of a new "KEY"; the value of is is "1". Then click on "Add".
+- Now that you have configured your the project's "Settings", you should go to the "Deploy" section.
+- Click on the "Deploy" section.
+- How can I set up the "Deploy" section?
+  - Go back to you app's page.
+  - Click on "Deploy".
+  - Scroll down to the "Deployment method" on the left.
+- How can I set up the "Deployment method" subsection in the "Deploy" section?
+  - On your app's page, click on "Deploy," then scroll down a bit to reach the "Deployment method" section.
+  - Select "GitHub."
+  - Click on the "Connect to GitHub" button.
+  - The "Connect to GitHub" subsection will open.
+  - In the "Connect to GitHub" subsection, there is a field on the right side for "repo-name."
+  - In the "repo-name" field, type in the name of your GitHub repository that you want to deploy on Heroku. I typed in "Savour".
+  - Then click on "Search"; after that, click on "Connect."
+  - This will link Heroku to your project GitHub repository code.
+- Underneath "Automatic deploys" you can find the "Manual deploy" subsection.
+  - Click on "Deploy Branch".
+  - As soon as your app has been deployed, a confirmation message will appear saying: "Your app was successfully deployed".
+  - Just under that confirmation message, a "View" button will appear.
+  - Click on that "View" button to open your deployed app on Heroku in a new tab!
+- Scroll into the "Automatic deploys" subsection.
+  - If you want to choose this option, click on "Enable Automatic Deploys".
+  - In this case, Heroku will rebuild your app every time you push a new change to your code to Github.
+- I applied the manual deployment method at first; then I applied automatic deployment method.
+- After deployment, you can directly start your app.
+- If you want to restart your app, click on "RUN PROGRAM" on the top left.
+
+## 11 . 4. Installing Django and supporting libraries
+
+- Please type in each of the following commands in your Codeanywhere terminal:
+  - The command to install Django and gunicorn is: "pip3 install 'django<4' gunicorn". After that I have installed the up-to-date Django version which is 4.2.6. You can check this in my requirements.txt.
+  - The command to install supporting libraries is: "pip3 install dj_database_url==0.5.0 psycopg2".
+  - Two commands to Install Cloudinary Libraries are: "pip3 install dj3-cloudinary-storage" and "pip3 install urllib3==1.26.15".
+  - The command to create a requirements file is: "pip3 freeze --local > requirements.txt".
+  - The command to create a Django project "savour" is: "django-admin startproject savour .".
+  - The command to create a Django app app "booing" is: "python3 manage.py startapp booking".
+- In settings.py file add your Django app name to your list of installed apps, which is in my case: "booking", then save it.
+- In your Codeanywhere terminal, type in the following commannds:
+  - The command to migrate changes is: "python3 manage.py migrate".
+  - The command to run Server to Test is: "python3 manage.py runserver".
+    - You will see a yellow error screen.
+    - To solve this error, select and copy the hostname after “Invalid HTTP_HOST header” that appears in the yellow error message and include the quotes.
+    - Paste the hostname between the square brackets of ALLOWED_HOSTS in your settings.py file.
+
+## 11 . 5. Create a new external database on ElephantSQL
+
+- Create an account on ElephantSQL, www.elephantsql.com.
+- Log in to your ElephantSQL account.
+- Click on “Create New Instance”.
+- Set up your plan:
+  - Give your plan a Name; this is commonly the name of the project; mine is "savour".
+  - Select the Tiny Turtle, which a free plan.
+  - You can leave the Tags field blank.
+- Click on “Select Region”:
+  - Select a data center near you.
+  - If you receive a message saying "Error: No cluster available in your-chosen-data-center yet", choose another region.
+- Click on “Review”:
+  - Check that your details are correct.
+  - Then click “Create instance".
+- Return to the ElephantSQL dashboard and click on the database instance name for your project.
+- Copy your ElephantSQL database URL using the Copy icon. It will start with "postgres://".
+
+## 11 . 6. Create a Heroku app for your project
+
+- Create new Heroku App.
+- Give a name to your Heroku app.
+- Specify the location to be "Europe".
+- Open the settings tab.
+- Click Reveal Config Vars: Here you should add the config vars that I already demonstrated in details in the deployment via Heroku section.
+
+## 11 . 7. Attaching the database
+
+- Create new env.py file on top level directory of your Codeanywhere workspace.
+- Register the following into your created env.py file:
+  - To import os library: "import os".
+  - To set environment variables: 'os.environ["DATABASE_URL"] = "Paste in your ElephantSQL database URL"'.
+  - To add in a secret key: 'os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"'.
+- In your Heroku app:
+  - To add a secret key to the config vars of your Heroku app: 'SECRET_KEY, “randomSecretKey”'. Your secret key can be anything you want.
+
+## 11. 8. Preparing the environment and settings.py file of the project
+
+- In the settings.py, I included the following code:
+  - To reference the env.py file, I included the following code under 'from pathlib import Path':
+    - import os
+    - import dj_database_url
+    - if os.path.isfile("env.py"):
+    - import env
+  - Remove the insecure value of the SECURE_KEY from the settings.py file and replace it with:
+    - "os.environ.get('SECRET_KEY')"
+    - This will link the SECRET_KEY to its value on Heroku.
+  - Comment out the following lines of old DataBases in the settings.py file:
+    - DATABASES = {
+      - 'default': {
+      - 'ENGINE': 'django.db.backends.sqlite3'
+      - 'NAME': BASE_DIR / 'db.sqlite3'
+      - }
+    - }
+  - To link to the DATABASE_URL variable on Heroku, I added the following new DATABASES Section to the settings.py file:
+    - DATABASES = {
+      - 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    - }
+- In my Codeanywhere terminal, I ran the following command to save all files and Make Migrations to my project database on ElephantSQL:
+  - python3 manage.py migrate
+
+## 11. 9. Storing the static and media files stored on Cloudinary
+
+- In Cloudinary:
+  - From your Cloudinary dashboard, copy your CLOUDINARY_URL e.g. API Environment Variable.
+- In env.py:
+  - Add Cloudinary URL to env.py, for example, as follows:
+  - os.environ["CLOUDINARY_URL"] = "cloudinary://\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***"
+- In Heroku:
+  - Add Cloudinary URL to Heroku Config Vars - be sure to paste in the correct section of the link.
+  - Add DISABLE_COLLECTSTATIC to Heroku Config Vars, which is a temporary step for the moment and will be removed before deployment.
+- In settings.py:
+  - Add the following Cloudinary Libraries to installed apps as follows (order is important):
+    - INSTALLED_APPS = [
+      - 'cloudinary_storage',
+      - 'django.contrib.staticfiles', (This line already exists!)
+      - 'cloudinary',
+    - ]
+  - Tell Django to use Cloudinary to store media and static files. Place the following under "STATIC_URL = '/static/'":
+    - STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+    - STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+    - STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    - MEDIA_URL = '/media/'
+    - DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+  - Link file to the templates directory in Heroku. Place the following under the BASE_DIR line:
+    - TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+  - Change the templates directory to TEMPLATES_DIR. Place it within the TEMPLATES array as follows:
+    - TEMPLATES = [
+      - {
+        - …,
+        - 'DIRS': [TEMPLATES_DIR],
+        - …,
+          - ],
+        - },
+      - },
+    - ]
+  - Add Heroku Hostname to ALLOWED_HOSTS (mine is "savour") as follows:
+    - ALLOWED_HOSTS = ["PROJ_NAME.herokuapp.com", "YOUR_HOSTNAME"]
+
+## 11. 10. In the top level of the root directory of your Codeanywhere workspace:
+
+- Create 3 new folders: media, static, templates
+- Create a Procfile
+
+## 11. 11. Procfile
+
+- Add the following code to your Procfile:
+  - web: gunicorn PROJ_NAME.wsgi
+- Save all files!
+
+## 11. 12. In your Codeanywhere terminal
+
+- Add, commit, and push to Github, as follows:
+  - git add .
+  - git commit -m “Deployment Commit”
+  - git push
+
+## 11. 13. In Heroku
+
+- Deploy your project manually on Heroku.
+- E.g Github as deployment method, on main branch.
+- Then you can activate automatic deploys on Heroku.
+
