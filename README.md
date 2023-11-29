@@ -998,4 +998,88 @@
 
 # 12. Credits
 
--
+## 12. 1. General credits
+
+- [Django Project](https://docs.djangoproject.com/en/4.2/)
+- [W3Schools Django Tutorial](https://www.w3schools.com/django/)
+- [Python.org](https://docs.python.org/3/)
+- [Bootstrap Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
+## 12. 2. models.py & admin.py
+
+- Code Institute's "I Think Therefore I Blog" walkthrough project.
+
+## 12. 3. urls.py
+
+- Code Institute's "I Think Therefore I Blog" walkthrough project.
+- [Stackoverflow/ URL of a LogoutView](https://stackoverflow.com/questions/59692899/using-loginview-and-logoutview-with-custom-templates)
+
+## 12. 4. views.py
+
+- [Code Institute's "I Think Therefore I Blog" walkthrough project/ views.py](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/blog/views.py)
+- [Stackoverflow/ objects.all()](https://stackoverflow.com/questions/72315821/what-is-the-difference-between-objects-all-and-objects-values)
+- [Stackoverflow/ .objects.get()](https://stackoverflow.com/questions/4353147/whats-the-best-way-to-handle-djangos-objects-get)
+- [MDN/ Django Tutorial Part 5/ Creating our home page](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Home_page)
+- [Python Tutorial/ Django Registration](https://www.pythontutorial.net/django-tutorial/django-registration/)
+- [Stackoverflow/ Django Login Message with LoginView](https://stackoverflow.com/questions/68391370/django-login-message-with-loginview)
+- [Stackoverflow/ Logout in Django](https://stackoverflow.com/questions/11241080/django-contrib-auth-logout-in-django)
+- [Stackoverflow/ login_required redirect url](https://stackoverflow.com/questions/3578882/how-to-specify-the-login-required-redirect-url-in-django)
+- [Stackoverflow/ Django/ Bookings view](https://stackoverflow.com/questions/64878932/how-to-return-current-users-booking-history-in-django-rest-framework)
+- [Stackoverflow/ Django/ Bookings view](https://stackoverflow.com/questions/64878932/how-to-return-current-users-booking-history-in-django-rest-framework)
+- [MDN/ Django Tutorial Part 9/ Working with forms](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms)
+- [Stackoverflow/ Update post through function based view in Django](https://stackoverflow.com/questions/64099360/update-post-through-function-based-view-in-django)
+- [dev.to/ Django/ cancel_booking view](https://dev.to/osahenru/building-a-simple-app-with-djangos-function-based-views-2729)
+
+## 12. 5. forms.py
+
+- [Stackoverflow/ class NewUserForm(UserCreationForm)/ 1](https://stackoverflow.com/questions/57966505/how-to-include-validate-email-package-into-django-usercreationform)
+- [Stackoverflow/ class NewUserForm(UserCreationForm)/ 2](https://stackoverflow.com/questions/61457903/django-usercreationform-raise-validation-error-when-email-already-exist)
+- [Stackoverflow/ class NewUserForm(UserCreationForm)/ 3](https://stackoverflow.com/questions/5745197/django-create-custom-usercreationform)
+- [Stackoverflow/ Django time/date widgets in custom form](https://stackoverflow.com/questions/38601/using-django-time-date-widgets-in-custom-form)
+- [Stackoverflow/ Django time field choices](https://stackoverflow.com/questions/51164326/how-can-i-add-choices-to-a-timefield-in-a-django-form)
+- [Github/ Django booking form](https://github.com/f6ite/Django-Booking-Form/blob/main/ModelFormProject/detailsapp/forms.py)
+- [dev.to/ Django: timedelta, DurationField and Total Time](https://dev.to/rquattrogtl/django-timedelta-durationfield-and-total-time-d51)
+- [Django Project/ Form and field validation](https://docs.djangoproject.com/en/4.2/ref/forms/validation/)
+- [Stackoverflow/ .objects.filter().exists()](https://stackoverflow.com/questions/64399630/django-rest-framework-filter-queryset-takes-3-positional-arguments-but-4-were)
+- [MDN/ Django Tutorial Part 9/ Working with forms](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms)
+
+## 12. 6. base.html
+
+- [dev.to/ Navbar styling & logo/ Django & Bootstrap 5](https://dev.to/balt1794/navbar-styling-logo-using-bootstrap5-django-12f3)
+- [Code Institute/ Django blog/ base.html](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/templates/base.html)
+- [Ordinary Coders/ Django Messages Framework](https://ordinarycoders.com/blog/article/django-messages-framework)
+
+## 12. 7. menu.html
+
+- [Bootstrap/ Cards](https://getbootstrap.com/docs/5.3/components/card/#about)
+- [Code Institute/ Django blog/ index.html](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/templates/index.html)
+- [Template Tags and Filters/ safe filter](https://www.djangotemplatetagsandfilters.com/filters/safe/)
+- [Django Project/ Built-in template tags and filters](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/)
+
+## 12. 8. home.html
+
+- [MDBootstrap/ Hero image](https://mdbootstrap.com/learn/mdb-foundations/bootstrap/hero-image/)
+- [W3Schools/ Bootstrap 5 Containers](https://www.w3schools.com/bootstrap5/bootstrap_containers.php)
+
+## 12. 9. register.html
+
+- [Bootstrap 5/ Containers](https://getbootstrap.com/docs/5.3/layout/containers/)
+- [Bootstrap 5/ Flex/ justify-content-center](https://getbootstrap.com/docs/5.3/utilities/flex/#justify-content)
+- [Bootstrap 5/ Columns](https://getbootstrap.com/docs/5.3/layout/columns/)
+- [Bootstrap 5/ Forms](https://getbootstrap.com/docs/5.3/forms/overview/)
+- [Code Institute/ Django blog/ post_detail.html](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/templates/post_detail.html)
+- [Django Project/ Form and field validation/ Non-field errors](https://docs.djangoproject.com/en/4.2/ref/forms/validation/)
+- [Stackoverflow/ form.non_field_errors](https://stackoverflow.com/questions/26905679/how-to-handle-form-non-field-errors-and-form-errors)
+- [Stackoverflow/ Django form registration/ form username, email, and password errors](https://stackoverflow.com/questions/6364623/django-registration-email-as-username/26560158#26560158)
+- [MDN/ HTMLObjectElement/ .setCustomValidity() method](https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement/setCustomValidity)
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
