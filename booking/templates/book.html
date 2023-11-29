@@ -13,7 +13,7 @@
           <select class="form-control" id="table" name="table" required>
             <option value="">Select a table:</option>
             {% for table in tables %}
-            <option value="{{ table.id }}">
+            <option value="{{ table.number }}">
               Table {{ table.number }} ({{ table.capacity }} persons)
             </option>
             {% endfor %}

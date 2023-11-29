@@ -214,7 +214,7 @@
 - Clicking on "My Bookings" will open the "My Bookings" page on the website.
 - On "My Bookings" page, a signed-in user can see their bookings, update them, or cancel them.
 - On each booking, there are all the details of that booking; underneath, there are two buttons: "Update Booking" and "Cancel Booking".
-- If a user clicks inside a certain booking on the "Update Booking" button, a form for updating a booking opens up, on which a user can choose new settings to be applied for that booking; if these are available, that booking will be updated and the user will be redirected back into their "My Bookings" page, where they can find their updated booking. If these are not available, however, an error message arises, tells the user that those settings are already booked, and urges the user to choose other settings to be able to update their booking.
+- If a user clicks inside a certain booking on the "Update Booking" button, a form for updating a booking opens up prepopulated with the settings of the booking that the customer wants to update. The user can choose new settings to be applied for that booking; if these are available, that booking will be updated and the user will be redirected back into their "My Bookings" page, where they can find their updated booking. If these are not available, however, an error message arises, tells the user that those settings are already booked, and urges the user to choose other settings to be able to update their booking.
 - If a user clicks inside a certain booking on the "Cancel Booking" button, a message pops up and asks the user if they are sure that they want to cancel that booking. If the user confirms their wish to cancel that booking by clicking on "OK", that booking will be cancelled and a message comes into sight confirming that that booking has successfully been cancelled.
 - Below are eight screenshots that depict the "My Bookings" form; the first six are on a laptop, the seventh on an iPad, and the eighth on an iPhone.
 
@@ -1072,14 +1072,21 @@
 - [Stackoverflow/ form.non_field_errors](https://stackoverflow.com/questions/26905679/how-to-handle-form-non-field-errors-and-form-errors)
 - [Stackoverflow/ Django form registration/ form username, email, and password errors](https://stackoverflow.com/questions/6364623/django-registration-email-as-username/26560158#26560158)
 - [MDN/ HTMLObjectElement/ .setCustomValidity() method](https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement/setCustomValidity)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+
+## 12. 10. book.html
+
+- [SkillSugar/ How to get Form Input ID, Label & Name in Django Template/ form.time.id_for_label](https://www.skillsugar.com/how-to-get-form-input-id-label-name-in-django-template)
+
+## 12. 11. update_booking.html
+
+- [Stackoverflow/ Iterating over the options of a SelectField in a template](https://stackoverflow.com/questions/9221010/how-do-i-iterate-over-the-options-of-a-selectfield-in-a-template)
+
+## 12. 12. my_bookings.html
+
+- [Geeks For Geeks/ Django Template Tag for a url/ update or cancel butto href url](https://www.geeksforgeeks.org/url-django-template-tag/)
+- [Stackoverflow/ Confirm before cancelling a booking/ JS confirm() & .preventDefault()](https://stackoverflow.com/questions/20475348/how-to-ask-for-confirmation-and-use-e-preventdefault-on-click-event)
+
+## 12. 13. "Savour" images
+
+- I created all images of my "Savour" project by means of [Freepik/ free AI image generator](https://www.freepik.com/ai/image-generator).
+- For more info about Freepik, please visit: [Freepik/ free AI image generator](https://www.freepik.com/ai/image-generator).
