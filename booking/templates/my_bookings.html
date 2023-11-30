@@ -32,14 +32,19 @@
 </div>
 
 <!-- JS function to let a user be sure before they cancel a booking -->
+
 <script>
-  const cancelButton = document.querySelector(".cancel-booking-button");
-  function confirmCancellation(click) {
-    if (confirm("Are you sure you want to cancel this booking?") === false) {
-      click.preventDefault();
+  const cancelButtons = document.querySelectorAll(".cancel-booking-button");
+
+  function confirmCancellation(event) {
+    if (!confirm("Are you sure you want to cancel this booking?")) {
+      event.preventDefault();
     }
   }
-  cancelButton.addEventListener("click", confirmCancellation);
+
+  cancelButtons.forEach((button) => {
+    button.addEventListener("click", confirmCancellation);
+  });
 </script>
 
 {% endblock %}
