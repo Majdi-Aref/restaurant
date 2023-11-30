@@ -888,7 +888,7 @@
 
 ## 11 . 5. Create a new external database on ElephantSQL
 
-- Create an account on ElephantSQL, www.elephantsql.com.
+- Create an account on ElephantSQL.
 - Log in to your ElephantSQL account.
 - Click on “Create New Instance”.
 - Set up your plan:
