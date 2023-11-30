@@ -53,6 +53,18 @@
 
 - As a user, I want to update any of my bookings so that I my updated booking will suit my new needs and circumstances.
 
+## 1. 12. User wants to register on the restaurant website
+
+- As a user, I can register on the restaurant website so that I can sign in to my account.
+
+## 1. 13. User wants to sign in to their account on the restaurant website
+
+- As a user, I can sign in to my account on the restaurant website so that I I can book a table.
+
+## 1. 14. User wants to sign out of their account on the restaurant website
+
+- As a user, I can sign out of my account on the restaurant website so that I my account stays safe.
+
 # 2. Existing features
 
 ## 2. 1. Navigation bar
