@@ -1038,7 +1038,6 @@
 - [Stackoverflow/ Logout in Django](https://stackoverflow.com/questions/11241080/django-contrib-auth-logout-in-django)
 - [Stackoverflow/ login_required redirect url](https://stackoverflow.com/questions/3578882/how-to-specify-the-login-required-redirect-url-in-django)
 - [Stackoverflow/ Django/ Bookings view](https://stackoverflow.com/questions/64878932/how-to-return-current-users-booking-history-in-django-rest-framework)
-- [Stackoverflow/ Django/ Bookings view](https://stackoverflow.com/questions/64878932/how-to-return-current-users-booking-history-in-django-rest-framework)
 - [MDN/ Django Tutorial Part 9/ Working with forms](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms)
 - [Stackoverflow/ Update post through function based view in Django](https://stackoverflow.com/questions/64099360/update-post-through-function-based-view-in-django)
 - [dev.to/ Django/ cancel_booking view](https://dev.to/osahenru/building-a-simple-app-with-djangos-function-based-views-2729)
