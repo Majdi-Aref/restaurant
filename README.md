@@ -1,13 +1,13 @@
 # "Savour"
 
 - "Savour" is a restaurant website that enables customers to book a table online.
-- People who would like to online book a table in a restaurant would benefit from using this website.
+- People who would like to book a table online in a restaurant would benefit from using this website.
 - I developed "Savour" as my project portfolio 4 for my remote, full-stack software development diploma with the Code Institute in Dublin, Ireland.
 - The name of this project on Github is "restaurant", and its name on Heroku is "savour". The actual name of this project on the restaurant website is "Savour".
 
 ![Screenshot demonstrating website responsiveness on all screen sizes](readme-images/responsiveness-1.png)
 
-# 1. User stories:
+# 1. User stories
 
 ## 1. 1. Admin wants to add new items to the menu
 
@@ -53,7 +53,7 @@
 
 - As a user, I want to update any of my bookings so that I my updated booking will suit my new needs and circumstances.
 
-# 2. Existing features:
+# 2. Existing features
 
 ## 2. 1. Navigation bar
 
@@ -70,7 +70,7 @@
 ## 2. 2. Landing page image
 
 - The landing page image on the top center of the home page shows a table on which there are some delicious meals.
-- Below are two screenshots of the landing page image; the first on a loptop and the second on an iPhone.
+- Below are two screenshots of the landing page image; the first on a laptop and the second on an iPhone.
 
 ![Hero image on a laptop](readme-images/hero-image-laptop.png)
 
@@ -81,7 +81,7 @@
 - This section is beneath the landing page image on the home page.
 - It tells a user that "Savour" is a cozy, small family-owned restaurant located in Hamburg, Germany that offers its customers various, tasty, healthy meals and drinks.
 - Additionally, it emphasizes that a customer can easily book a table online as soon as they will have registered on the restaurant website.
-- Below are three screenshots of the "About Us" section; the first on a loptop and the second and third on an iPhone.
+- Below are three screenshots of the "About Us" section; the first on a laptop and the second and third on an iPhone.
 
 !["About Us" section on a laptop](readme-images/about-us-laptop.png)
 
@@ -105,7 +105,7 @@
 - The restaurant menu exist on the menu page.
 - It contains twelve items, each has an image, name, description, and price.
 - All meals images are fully responsive on all screen sizes.
-- Below are various screenshots of the restaurant menu; they are from top to bottom as follows: four screenshots on a laptop, three on a Blackberry, and eight on an iPhone.
+- Below are various screenshots of the restaurant menu; they are from top to bottom as follows: four screenshots on a laptop, three on a BlackBerry, and eight on an iPhone.
 
 ![Menu on a laptop 1](readme-images/menu-laptop-1.png)
 
@@ -141,12 +141,12 @@
 
 - On the register page, there is a register form that enables a customer to register by entering a username, an email, and a password.
 - A user must confirm their password.
-- The register form urges a user to enter a username that is at least six characters long. It it was not, an error message will appear.
+- The register form urges a user to enter a username that is at least six characters long. If it was not, an error message will appear.
 - The register form examines the right formula of an email. If its formula was not correct, an error message will appear.
 - As a user enters their password, it must be at least eight characters long, otherwise an error message will appear.
-- As a user confirms their password, the two must be identical; if not, an error message will become visible.
+- As a user confirms their password, the two must be identical. If they are not, an error message will become visible.
 - If a registration has been successful, a confirmation message will emerge and a user will be simultaneously moved into the sign-in page and urged to sign in to be able to book a table.
-- Below are eight screenshots of the register form. The first six are on a loptop, the seventh on an iPad, and the eighth on an iPhone.
+- Below are eight screenshots of the register form. The first six are on a laptop, the seventh on an iPad, and the eighth on an iPhone.
 
 ![Register form on a laptop 1](readme-images/register-laptop-1.png)
 
@@ -187,8 +187,8 @@
 ## 2. 8. Book a table
 
 - The "Book a table" button appears on the nav bar only after a user will have signed in.
-- A signed-in user can book a table in "Savour" my means of a booking form that is built in the "Book a table" page.
-- To book a table, a user should choose a certain table from twelve tables for a specific date and time; the user should also choose a certain the number of guests that is 1, 2, 3, 4, 5, or 6.
+- A signed-in user can book a table in "Savour" by means of a booking form that is built in the "Book a table" page.
+- To book a table, a user should choose a certain table from twelve tables for a specific date and time; the user should also choose a certain number of guests that is 1, 2, 3, 4, 5, or 6.
 - If the table, date, and time that a user chooses are already booked, an error message appears and encourages the user to choose another table, date, or time to be able to book a table.
 - If a user chooses a number of guests that is not compatible with the capacity of the table that the user wants to book, an error message pops up and notifies the user about that.
 - As a user successfully books a table, a confirmation message informs the user about that, and the user will be redirected into the "My Bookings" page, where they can check their bookings.
@@ -237,7 +237,7 @@
 ## 2. 10. Sign Out
 
 - The Sign Out button appears on the nav bar only after a user will have signed in.
-- When a user clicks on the "Sign Out" button on the nav bar, a message appears confirming that they have successfully signed out. At the same time, the user will be redirected to the home page and the "My Bookings" and "Sign Out" buttons will disappear from the nav bar.
+- When a user clicks on the "Sign Out" button on the nav bar, a message appears confirming that they have successfully signed out. At the same time, the user will be redirected to the home page and the "My Bookings", "Sign Out", and "Book A Table" buttons will disappear from the nav bar.
 
 ![Sign Out on a laptop 1](readme-images/signout-laptop-1.png)
 
@@ -261,7 +261,7 @@
 
 - Two Google fonts have been used: "Bakbak One" and "Lato".
 - Four icons from Font Awesome have been implemented: Facebook, Twitter, Instagram, and YouTube.
-- Four colors have been applied: #d4390f, #0000008c, #212529, and #FFFFFF.
+- Four colors have been applied: #d4390f, #0000008C, #212529, and #FFFFFF.
 - Nine background colors have been applied: #FFFFFF, #F8F9FA, #3B5998, #55ACEE, #AC2BAC, #DD4B39, #E8F0FE, #0D6EFD, and #DC3545.
 
 # 5. Wireframes & entity relationship diagrams
@@ -269,7 +269,7 @@
 ## 5. 1. Wireframes
 
 - I created seven Balsamiq wireframes for my project "Savour".
-- Down is a PNG image of the twelve screenshots of all seven wireframes.
+- Below is a PNG image of the twelve screenshots of all seven wireframes.
 - The screenshots are ordered in a way that reflects the functionalities of "Savour".
 
 !["Savour" website wireframes](readme-images/wireframe-14.png)
@@ -286,11 +286,11 @@
 
 ## 6. 1. Codeanywhere
 
-- Codeanywhere is an efficient cloud-based integrated development environment that I employed to write, review, integrate, and deploy the code of "Savour" without any need for installations or configurations on my laptop.
+- Codeanywhere is an efficient cloud-based integrated development environment that I employed to write, review, integrate, and deploy the code of 'Savour' without any need for installations or configurations on my laptop.
 
 ## 6. 2. GitHub
 
-- A platform for version control and collaborative software development, which I used to create a central code repository for and deploy the "Savour".
+- A platform for version control and collaborative software development, which I used to create a central code repository for and deploy the 'Savour'.
 - This, in turn, allows me to keep track of changes made to code and revert to previous versions if needed.
 
 ## 6. 3. Heroku
@@ -298,31 +298,31 @@
 - A cloud-based platform that enables developers to build, deploy, and scale modern applications.
 - Heroku supports several programming languages, including Node.js, Ruby, Java, PHP, Python, Go, Scala, and Clojure.
 - Heroku allows developers to focus on code instead of infrastructure and is seamlessly integrated with GitHub.
-- I have deployed "Savour" on Heroku.
+- I have deployed 'Savour' on Heroku.
 
 ## 6. 4. Django & Python
 
 - Python is a high-level, general-purpose programming language.
 - Django is a free and open-source, Python-based web framework that follows the model template views, MTV, architectural pattern.
-- I utilized Django/Python to build most of my "Savour" project.
+- I utilized Django/Python to build most of my 'Savour' project.
 
 ## 6. 5. Bootstrap 5
 
 - Bootstrap free and open-source CSS framework directed at responsive, mobile-first front-end web development.
 - It contains HTML, CSS and optionally JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
-- I utilized Bootstrap 5 to build "Savour" .html templates.
+- I utilized Bootstrap 5 to build 'Savour' HTML templates.
 
 ## 6. 6. HTML "HyperText Markup Language"
 
 - The standard markup language for documents designed to be displayed in a web browser.
 - It defines the meaning and structure of web content.
 - It makes a website accessible and provides the relevant structure for search engine optimization.
-- I utilized HTML To build part of the content of "Savour" .html templates.
+- I utilized HTML To build the content of 'Savour' HTML templates.
 
 ## 6. 7. CSS "Cascading Style Sheets"
 
 - A style sheet language used for styling the presentation of a document written in a markup language such as HTML or XML.
-- I utilized CSS to add some styling to "Savour" .html templates.
+- I utilized CSS to add some styling to 'Savour' HTML templates.
 
 ## 6. 8. JavaScript
 
@@ -332,48 +332,48 @@
 ## 6. 9. Google Fonts
 
 - Google Fonts beautifully amplify how a website looks.
-- I made use of two Google fonts in "Savour": "Lato" for the body element of all .html files, and "Bakbak One" font for the website headings.
-- I included two Google fonts as backups: "Open Sans" and "Roboto".
+- I made use of two Google fonts in 'Savour': "Lato" for the body element of all .html files, and "Bakbak One" font for the website headings.
+- I included two Google fonts as backups: 'Open Sans' and 'Roboto'.
 
 ## 6. 10. Font Awesome
 
-- To enhance the visual design of "Savour", I turned to Font Awesome and incorporated four of its fonts into the social media links: Facebook, Twitter, Instagram, and YouTube.
+- To enhance the visual design of 'Savour', I turned to Font Awesome and incorporated four of its fonts into the social media links: Facebook, Twitter, Instagram, and YouTube.
 
 ## 6. 11. W3C HTML & CSS validators
 
 - There are two W3C validators: Online tools that check HTML and CSS code.
 - A developer can use them to validate their code by URL, file upload, or direct input.
-- By means of direct input, I have used them both to validate the html and css files of "Savour" website.
+- By means of direct input, I have used them both to validate the html and css files of 'Savour' website.
 
 ## 6. 12. CI Python Linter
 
 - An online website that validates Python code.
 - The Code Institute made this program available for its students; for more details about this program, please contact Code Institute.
-- I used it to validate all .py files of "Savour" by directly inputting the code.
+- I used it to validate all .py files of 'Savour' by directly inputting the code.
 
 ## 6. 13. JSHint
 
 - An online website that validates JavaScript code.
-- I made use of JSHint to validate the JS code of "Savour" by means of direct input.
+- I made use of JSHint to validate the JS code of 'Savour' by means of direct input.
 
 ## 6. 14. Balsamiq Wireframes
 
 - Balsamiq Wireframes is a graphical user interface website wireframe builder application.
 - It allows the designer to arrange pre-built widgets using a drag-and-drop WYSIWYG editor.
 - The application is offered in a desktop version as well as a plug-in for Google Drive, Confluence and JIRA.
-- I used it to create "Savour" frameworks.
+- I used it to create 'Savour' wireframes.
 
 ## 6. 15. Lucidchart
 
 - A web-based diagramming application that allows users to visually collaborate on drawing, revising and sharing charts and diagrams, and improve processes, systems, and organizational structures.
-- I utilized it to generate the entity relationship diagram of "Savour".
+- I utilized it to create the entity relationship diagram of 'Savour'.
 
 ## 6. 16 Cloudinary
 
 - A SaaS technology company.
 - The company provides cloud-based image and video management services.
 - It enables users to upload, store, manage, manipulate, and deliver images and video for websites and apps.
-- I used it to upload, store, manage, manipulate, and deliver images for "Savour".
+- I used it to upload, store, manage, manipulate, and deliver images for 'Savour'.
 
 ## 6. 17. Summernote
 
@@ -385,7 +385,7 @@
 
 - A PostgreSQL database hosting service.
 - It provides fully managed PostgreSQL databases, which means it takes care of administrative tasks such as installation, upgrades to the latest stable version, and backup handling.
-- I made use of it to host the PostgreSQL database of my "Savour" project.
+- I made use of it to host the PostgreSQL database of my 'Savour' project.
 
 ## 6. 19. psycopg2
 
@@ -397,20 +397,20 @@
 - An intermediary/interface between the web server and a python application.
 - A python web application cannot be deployed on traditional web servers.
 - Python web applications are more complex than static web pages, so you need a WSGI server like Gunicorn specifically intended for Python web applications and frameworks.
-- I installed it into my project "Savour" as the Web Server Gateway Interface (WSGI) server for my Django application so that Heroku can apply it to run "Savour".
+- I installed it into my project "Savour" as the Web Server Gateway Interface 'WSGI' server for my Django application so that Heroku can apply it to run "Savour".
 
 ## 6. 21. urllib3
 
 - A powerful, user-friendly HTTP client for Python.
 - It is widely used in the Python ecosystem.
-- I utilized it in my project to anable many critical features that are missing from the Python standard libraries such as thread safety and connection pooling.
+- I utilized it in my project to anable many critical features that are missing from the Python standard libraries, such as thread safety and connection pooling.
 
 ## 6. 22. Google Lighthouse report
 
 - An open-source, automated tool for improving the quality of web pages.
 - One can run it against any web page, public or requiring authentication.
 - It has audits for performance, accessibility, progressive web apps, SEO, and more.
-- I used it to assess "Savour" as it will be exhibited underneath in the code validation section.
+- I used it to assess 'Savour' as it will be exhibited underneath in the code validation section.
 
 # 7. Code validation
 
@@ -704,13 +704,14 @@
   - The user clicks on the "Update Booking" button on "My Bookings" page.
 - Expected Results:
   - A new booking form opens with the heading "Update Booking".
+  - This new booking form will be prepopulated with the details of the booking that the user wants to update.
   - The user specifies how they want to update their booking; they can update each element of their booking.
   - If a booking is successfully updated, a message will appear and tell the user that they have successfully updated their booking. At the same time, the user will be redirected into the "My Bookings" page where they can see their bookings in detail.
 - Actual results:
   - The actual results are identical to the expected results.
 - Please have a look at the screenshot below.
 
-!["Testing the 'Update Booking' button"](readme-images/testing-update-booking-1.png)
+!["Testing the 'Update Booking' button"](readme-images/testing-update-booking.png)
 
 ## 8. 17. Testing the "Cancel Booking" button on "My Bookings" page
 
@@ -796,10 +797,10 @@
 - Heroku is a platform that can handle backend programing languages such as Python, which Github can not.
 - Therefore, when we build a project with Python/Django, we need a deploy it on a platform like Heroku so that we can let others see it in action.
 - As stated above, you should already have put all the dependencies of your project in the 'requirements.txt' file of your project.
-- Plaase type in the following command in the terminal of your Codeanywhere's workspace: "pip3 freeze > requirements.txt" and then press enter.
-- Once you have done that, Heroku searches fo, finds that file, requirements.txt, and installs all the dependencies that are listed inside it before running the project's code.
+- Please type in the following command in the terminal of your Codeanywhere's workspace: "pip3 freeze > requirements.txt" and then press enter.
+- Once you have done that, Heroku searches for, finds that file, requirements.txt, and installs all the dependencies that are listed inside it before running the project's code.
 - Please do not forget to add, commit, and push those changes from your Codeanywhere worksapce to Github.
-- How can you sign up for an account by Heroku?
+- How can you sign up for an account on Heroku?
   - Open Heroku's website.
   - In the process of signing up for an account with Heroku, I have selected "Student" as a "Role" because I am now a student at the Code Institute. For the "Primary development language" I have selected "Python" as I have written the "Savour" with Django/Python.
   - Once you have finished entering the details of your signing up, click on "CREATE FREE ACCOUNT", which is on the bottom right of the sign-up page.
@@ -829,7 +830,7 @@
   - Enter "DATABASE_URL" in the field of a new "KEY"; the "VALUE" of it is the value of the URL of your respective project instance on your ElephantSQL account. Then click on "Add".
   - Enter "SECRET_KEY" in the field of a new "KEY"; the "VALUE" of it is the value of your "SECRET_KEY" variable you created in your env.py file in the root directory of your project Codeanywhere workspace. Then click on "Add".
   - Enter "DISABLE_COLLECTSTATIC" in the field of a new "KEY"; the value of is is "1". Then click on "Add".
-- Now that you have configured your the project's "Settings", you should go to the "Deploy" section.
+- Now that you have configured your project's "Settings", you should go to the "Deploy" section.
 - Click on the "Deploy" section.
 - How can I set up the "Deploy" section?
   - Go back to you app's page.
@@ -847,12 +848,12 @@
 - Underneath "Automatic deploys" you can find the "Manual deploy" subsection.
   - Click on "Deploy Branch".
   - As soon as your app has been deployed, a confirmation message will appear saying: "Your app was successfully deployed".
-  - Just under that confirmation message, a "View" button will appear.
+  - Just under that confirmation message, a 'View' button will appear.
   - Click on that "View" button to open your deployed app on Heroku in a new tab!
 - Scroll into the "Automatic deploys" subsection.
-  - If you want to choose this option, click on "Enable Automatic Deploys".
+  - If you choose this option, click on "Enable Automatic Deploys".
   - In this case, Heroku will rebuild your app every time you push a new change to your code to Github.
-- I applied the manual deployment method at first; then I applied automatic deployment method.
+- I applied the manual deployment method at first; then I also applied the automatic deployment method.
 - After deployment, you can directly start your app.
 - If you want to restart your app, click on "RUN PROGRAM" on the top left.
 
@@ -864,9 +865,9 @@
   - Two commands to Install Cloudinary Libraries are: "pip3 install dj3-cloudinary-storage" and "pip3 install urllib3==1.26.15".
   - The command to create a requirements file is: "pip3 freeze --local > requirements.txt".
   - The command to create a Django project "savour" is: "django-admin startproject savour .".
-  - The command to create a Django app app "booing" is: "python3 manage.py startapp booking".
+  - The command to create a Django app app "booking" is: "python3 manage.py startapp booking".
 - In settings.py file add your Django app name to your list of installed apps, which is in my case: "booking", then save it.
-- In your Codeanywhere terminal, type in the following commannds:
+- In your Codeanywhere terminal, type in the following commands:
   - The command to migrate changes is: "python3 manage.py migrate".
   - The command to run Server to Test is: "python3 manage.py runserver".
     - You will see a yellow error screen.
@@ -897,7 +898,7 @@
 - Give a name to your Heroku app.
 - Specify the location to be "Europe".
 - Open the settings tab.
-- Click Reveal Config Vars: Here you should add the config vars that I already demonstrated in details in the deployment via Heroku section.
+- Click 'Reveal Config Vars': Here you should add the config vars that I already demonstrated in details in the deployment via Heroku section.
 
 ## 11 . 7. Attaching the database
 
@@ -917,7 +918,7 @@
     - import dj_database_url
     - if os.path.isfile("env.py"):
     - import env
-  - Remove the insecure value of the SECURE_KEY from the settings.py file and replace it with:
+  - Remove the insecure value of the SECRET_KEY from the settings.py file and replace it with:
     - "os.environ.get('SECRET_KEY')"
     - This will link the SECRET_KEY to its value on Heroku.
   - Comment out the following lines of old DataBases in the settings.py file:
@@ -972,7 +973,7 @@
   - Add Heroku Hostname to ALLOWED_HOSTS (mine is "savour") as follows:
     - ALLOWED_HOSTS = ["PROJ_NAME.herokuapp.com", "YOUR_HOSTNAME"]
 
-## 11. 10. In the top level of the root directory of your Codeanywhere workspace:
+## 11. 10. In the top level of the root directory of your Codeanywhere workspace
 
 - Create 3 new folders: media, static, templates
 - Create a Procfile
@@ -1083,7 +1084,7 @@
 
 ## 12. 12. my_bookings.html
 
-- [Geeks For Geeks/ Django Template Tag for a url/ update or cancel butto href url](https://www.geeksforgeeks.org/url-django-template-tag/)
+- [Geeks For Geeks/ Django Template Tag for a url/ update or cancel button href url](https://www.geeksforgeeks.org/url-django-template-tag/)
 - [Stackoverflow/ Confirm before cancelling a booking/ JS confirm() & .preventDefault()](https://stackoverflow.com/questions/20475348/how-to-ask-for-confirmation-and-use-e-preventdefault-on-click-event)
 
 ## 12. 13. "Savour" images
